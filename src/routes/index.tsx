@@ -21,7 +21,11 @@ export const Route = createFileRoute("/")({
     meta: [
       { title: "Yu+Mi · A.D.H.D — Luxury for the sensitive mind" },
       { name: "description", content: "Curated luxury menswear, fashion accessories, personal electronics, weighted bedding, and high-end fidget objects — designed to soften external stimuli." },
+      { property: "og:title", content: "Yu+Mi · A.D.H.D — Luxury for the sensitive mind" },
+      { property: "og:description", content: "Curated luxury menswear, electronics, weighted bedding, and high-end fidget objects — designed to soften external stimuli." },
+      { property: "og:url", content: "/" },
     ],
+    links: [{ rel: "canonical", href: "/" }],
   }),
   component: Home,
 });
@@ -54,7 +58,7 @@ function Home() {
           <p className="mt-6 text-base md:text-lg text-muted-foreground max-w-xl">
             A curated sanctuary of menswear, electronics, and tactile objects — sourced globally, vetted for craft, engineered to soften the noise of the world.
           </p>
-          <div className="mt-10 flex gap-4">
+          <div className="mt-10 flex flex-wrap gap-4">
             <Button asChild size="lg" className="rounded-sm bg-primary text-primary-foreground hover:bg-primary/90">
               <a href="#shop">Enter the collection</a>
             </Button>

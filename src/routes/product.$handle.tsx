@@ -12,7 +12,11 @@ export const Route = createFileRoute("/product/$handle")({
   head: ({ params }) => ({
     meta: [
       { title: `${params.handle.replace(/-/g, " ")} — Yu+Mi · A.D.H.D` },
+      { property: "og:title", content: `${params.handle.replace(/-/g, " ")} — Yu+Mi · A.D.H.D` },
+      { property: "og:type", content: "product" },
+      { property: "og:url", content: `/product/${params.handle}` },
     ],
+    links: [{ rel: "canonical", href: `/product/${params.handle}` }],
   }),
   component: ProductPage,
 });
