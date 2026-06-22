@@ -15,7 +15,11 @@ export const Route = createFileRoute("/category/$slug")({
     meta: loaderData ? [
       { title: `${loaderData.cat.title} — Yu+Mi · A.D.H.D` },
       { name: "description", content: loaderData.cat.blurb },
+      { property: "og:title", content: `${loaderData.cat.title} — Yu+Mi · A.D.H.D` },
+      { property: "og:description", content: loaderData.cat.blurb },
+      { property: "og:url", content: `/category/${loaderData.cat.slug}` },
     ] : [],
+    links: loaderData ? [{ rel: "canonical", href: `/category/${loaderData.cat.slug}` }] : [],
   }),
   component: CategoryPage,
   notFoundComponent: () => (
