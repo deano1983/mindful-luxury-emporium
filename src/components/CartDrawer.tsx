@@ -61,12 +61,12 @@ export function CartDrawer() {
                       )}
                       <p className="text-sm gold-grad font-medium mt-1">{currency} {parseFloat(item.price.amount).toFixed(2)}</p>
                       <div className="flex items-center gap-1 mt-2">
-                        <Button variant="outline" size="icon" className="h-6 w-6" onClick={() => updateQuantity(item.variantId, item.quantity - 1)}><Minus className="h-3 w-3" /></Button>
+                        <Button variant="outline" size="icon" aria-label="Decrease quantity" className="h-6 w-6" onClick={() => updateQuantity(item.variantId, item.quantity - 1)}><Minus className="h-3 w-3" /></Button>
                         <span className="w-8 text-center text-xs">{item.quantity}</span>
-                        <Button variant="outline" size="icon" className="h-6 w-6" onClick={() => updateQuantity(item.variantId, item.quantity + 1)}><Plus className="h-3 w-3" /></Button>
+                        <Button variant="outline" size="icon" aria-label="Increase quantity" className="h-6 w-6" onClick={() => updateQuantity(item.variantId, item.quantity + 1)}><Plus className="h-3 w-3" /></Button>
                       </div>
                     </div>
-                    <Button variant="ghost" size="icon" className="h-6 w-6 self-start" onClick={() => removeItem(item.variantId)}>
+                    <Button variant="ghost" size="icon" aria-label="Remove item" className="h-6 w-6 self-start" onClick={() => removeItem(item.variantId)}>
                       <Trash2 className="h-3 w-3" />
                     </Button>
                   </div>
