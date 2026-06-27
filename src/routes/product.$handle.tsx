@@ -122,7 +122,7 @@ function ProductPage() {
             {images.length > 1 && (
               <div className="flex gap-2 mt-3 overflow-x-auto">
                 {images.map((img: { url: string }, i: number) => (
-                  <button key={i} onClick={() => setImgIdx(i)} className={`aspect-square w-20 flex-shrink-0 overflow-hidden border ${i === imgIdx ? "border-primary" : "hairline"}`}>
+                  <button key={i} onClick={() => setImgIdx(i)} aria-label={`View product image ${i + 1}`} className={`aspect-square w-20 flex-shrink-0 overflow-hidden border ${i === imgIdx ? "border-primary" : "hairline"}`}>
                     <img src={img.url} alt="" className="w-full h-full object-cover" />
                   </button>
                 ))}
