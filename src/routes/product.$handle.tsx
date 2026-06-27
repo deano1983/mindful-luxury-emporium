@@ -9,19 +9,53 @@ import { PRODUCT_BY_HANDLE_QUERY, storefrontApiRequest } from "@/lib/shopify";
 import { useCartStore } from "@/stores/cartStore";
 
 export const Route = createFileRoute("/product/$handle")({
-  head: ({ params }) => {
+  loader: async ({ params }) => {
+    try {
+      const res = await storefrontApiRequest(PRODUCT_BY_HANDLE_QUERY, { handle: params.handle });
+      return { product: res?.data?.product ?? null };
+    } catch { return { product: null }; }
+  },
+  head: ({ params, loaderData }) => {
+    const p = loaderData?.product;
     const readable = params.handle.replace(/-/g, " ");
-    const desc = `${readable} — sensory-considered luxury from Yu+Mi Sanctuary. Premium fabrics and quiet construction, with full sizing and detailed materials.`;
+    const title = p?.title ?? readable;
+    const rawDesc = p?.description || `${readable} — sensory-considered luxury from Yu+Mi Sanctuary. Premium fabrics and quiet construction, with full sizing and detailed materials.`;
+    const desc = rawDesc.length > 160 ? rawDesc.slice(0, 157) + "…" : rawDesc;
+    const image = p?.images?.edges?.[0]?.node?.url;
+    const price = p?.variants?.edges?.[0]?.node?.price;
+    const available = p?.variants?.edges?.some((e: { node: { availableForSale: boolean } }) => e.node.availableForSale);
+    const url = `https://mindful-luxury-emporium.lovable.app/product/${params.handle}`;
     return {
       meta: [
-        { title: `${readable} — Yu+Mi · A.D.H.D` },
-        { name: "description", content: desc.length > 160 ? desc.slice(0, 157) + "…" : desc },
-        { property: "og:title", content: `${readable} — Yu+Mi · A.D.H.D` },
-        { property: "og:description", content: desc.length > 160 ? desc.slice(0, 157) + "…" : desc },
+        { title: `${title} — Yu+Mi · A.D.H.D` },
+        { name: "description", content: desc },
+        { property: "og:title", content: `${title} — Yu+Mi · A.D.H.D` },
+        { property: "og:description", content: desc },
         { property: "og:type", content: "product" },
-        { property: "og:url", content: `/product/${params.handle}` },
+        { property: "og:url", content: url },
+        ...(image ? [{ property: "og:image", content: image }, { name: "twitter:image", content: image }] : []),
       ],
-      links: [{ rel: "canonical", href: `/product/${params.handle}` }],
+      links: [{ rel: "canonical", href: url }],
+      scripts: p ? [{
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Product",
+          name: p.title,
+          description: rawDesc,
+          ...(image ? { image: [image] } : {}),
+          url,
+          ...(price ? {
+            offers: {
+              "@type": "Offer",
+              price: parseFloat(price.amount).toFixed(2),
+              priceCurrency: price.currencyCode,
+              availability: available ? "https://schema.org/InStock" : "https://schema.org/OutOfStock",
+              url,
+            },
+          } : {}),
+        }),
+      }] : [],
     };
   },
   component: ProductPage,
@@ -29,12 +63,14 @@ export const Route = createFileRoute("/product/$handle")({
 
 function ProductPage() {
   const { handle } = Route.useParams();
+  const initial = Route.useLoaderData();
   const { data, isLoading } = useQuery({
     queryKey: ["product", handle],
     queryFn: async () => {
       const res = await storefrontApiRequest(PRODUCT_BY_HANDLE_QUERY, { handle });
       return res?.data?.product;
     },
+    initialData: initial?.product ?? undefined,
   });
   const addItem = useCartStore(s => s.addItem);
   const cartLoading = useCartStore(s => s.isLoading);
@@ -86,7 +122,7 @@ function ProductPage() {
             {images.length > 1 && (
               <div className="flex gap-2 mt-3 overflow-x-auto">
                 {images.map((img: { url: string }, i: number) => (
-                  <button key={i} onClick={() => setImgIdx(i)} className={`aspect-square w-20 flex-shrink-0 overflow-hidden border ${i === imgIdx ? "border-primary" : "hairline"}`}>
+                  <button key={i} onClick={() => setImgIdx(i)} aria-label={`View product image ${i + 1}`} className={`aspect-square w-20 flex-shrink-0 overflow-hidden border ${i === imgIdx ? "border-primary" : "hairline"}`}>
                     <img src={img.url} alt="" className="w-full h-full object-cover" />
                   </button>
                 ))}

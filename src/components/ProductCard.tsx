@@ -36,6 +36,7 @@ export function ProductCard({ product }: { product: ShopifyProduct }) {
           onClick={handleAdd}
           disabled={isLoading || !variant}
           size="icon"
+          aria-label="Add to selection"
           className="absolute bottom-3 right-3 h-9 w-9 rounded-full bg-background/90 text-foreground hover:bg-primary hover:text-primary-foreground opacity-0 group-hover:opacity-100 transition-opacity"
         >
           {isLoading ? <Loader2 className="h-4 w-4 animate-spin" /> : <Plus className="h-4 w-4" />}
