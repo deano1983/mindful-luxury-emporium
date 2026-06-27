@@ -17,9 +17,19 @@ export const Route = createFileRoute("/category/$slug")({
       { name: "description", content: loaderData.cat.blurb },
       { property: "og:title", content: `${loaderData.cat.title} — Yu+Mi · A.D.H.D` },
       { property: "og:description", content: loaderData.cat.blurb },
-      { property: "og:url", content: `/category/${loaderData.cat.slug}` },
+      { property: "og:url", content: `https://mindful-luxury-emporium.lovable.app/category/${loaderData.cat.slug}` },
     ] : [],
-    links: loaderData ? [{ rel: "canonical", href: `/category/${loaderData.cat.slug}` }] : [],
+    links: loaderData ? [{ rel: "canonical", href: `https://mindful-luxury-emporium.lovable.app/category/${loaderData.cat.slug}` }] : [],
+    scripts: loaderData ? [{
+      type: "application/ld+json",
+      children: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        name: `${loaderData.cat.title} — Yu+Mi · A.D.H.D`,
+        description: loaderData.cat.blurb,
+        url: `https://mindful-luxury-emporium.lovable.app/category/${loaderData.cat.slug}`,
+      }),
+    }] : [],
   }),
   component: CategoryPage,
   notFoundComponent: () => (
