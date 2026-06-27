@@ -86,9 +86,9 @@ export async function storefrontApiRequest(query: string, variables: Record<stri
 }
 
 export const CATEGORIES = [
-  { slug: "fashion", title: "Fashion", tag: "fashion", blurb: "Tactile-considered luxury menswear." },
-  { slug: "accessories", title: "Fashion Accessories", tag: "accessories", blurb: "Quiet statements. Heavy on craft." },
-  { slug: "electronics", title: "Personal Electronics", tag: "electronics", blurb: "Stimulus-shaping audio & devices." },
-  { slug: "bedding", title: "Bedding & Sanctuary", tag: "bedding", blurb: "Weighted, soft, deeply regulating." },
-  { slug: "objects", title: "Objects & Play", tag: "objects", blurb: "Fidget, focus, and finely-made play." },
+  { slug: "fashion", title: "Fashion", tag: "fashion", blurb: "Tactile-considered luxury menswear designed for comfort, calm and sensory regulation — soft hands, flat seams, quiet drape." },
+  { slug: "accessories", title: "Fashion Accessories", tag: "accessories", blurb: "Quiet statements heavy on craft: iced moissanite jewellery and designer-grade eyewear that finish the look without the noise." },
+  { slug: "electronics", title: "Personal Electronics", tag: "electronics", blurb: "Stimulus-shaping audio, wearables and devices for focus, deep work and decompression — chosen for low-friction daily use." },
+  { slug: "bedding", title: "Bedding & Sanctuary", tag: "bedding", blurb: "Weighted, soft and deeply regulating bedding curated to lower nervous-system load and turn the bedroom into a true sanctuary." },
+  { slug: "objects", title: "Objects & Play", tag: "objects", blurb: "Fidget, focus and finely-made play objects — discreet, professional-grade tools for sensory regulation and everyday creative flow." },
 ] as const;

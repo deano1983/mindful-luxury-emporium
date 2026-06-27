@@ -9,15 +9,21 @@ import { PRODUCT_BY_HANDLE_QUERY, storefrontApiRequest } from "@/lib/shopify";
 import { useCartStore } from "@/stores/cartStore";
 
 export const Route = createFileRoute("/product/$handle")({
-  head: ({ params }) => ({
-    meta: [
-      { title: `${params.handle.replace(/-/g, " ")} — Yu+Mi · A.D.H.D` },
-      { property: "og:title", content: `${params.handle.replace(/-/g, " ")} — Yu+Mi · A.D.H.D` },
-      { property: "og:type", content: "product" },
-      { property: "og:url", content: `/product/${params.handle}` },
-    ],
-    links: [{ rel: "canonical", href: `/product/${params.handle}` }],
-  }),
+  head: ({ params }) => {
+    const readable = params.handle.replace(/-/g, " ");
+    const desc = `${readable} — sensory-considered luxury from Yu+Mi Sanctuary. Premium fabrics and quiet construction, with full sizing and detailed materials.`;
+    return {
+      meta: [
+        { title: `${readable} — Yu+Mi · A.D.H.D` },
+        { name: "description", content: desc.length > 160 ? desc.slice(0, 157) + "…" : desc },
+        { property: "og:title", content: `${readable} — Yu+Mi · A.D.H.D` },
+        { property: "og:description", content: desc.length > 160 ? desc.slice(0, 157) + "…" : desc },
+        { property: "og:type", content: "product" },
+        { property: "og:url", content: `/product/${params.handle}` },
+      ],
+      links: [{ rel: "canonical", href: `/product/${params.handle}` }],
+    };
+  },
   component: ProductPage,
 });
 
