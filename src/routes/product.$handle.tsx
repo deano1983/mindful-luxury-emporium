@@ -25,6 +25,13 @@ export const Route = createFileRoute("/product/$handle")({
     const price = p?.variants?.edges?.[0]?.node?.price;
     const available = p?.variants?.edges?.some((e: { node: { availableForSale: boolean } }) => e.node.availableForSale);
     const url = `https://mindful-luxury-emporium.lovable.app/product/${params.handle}`;
+    const priceValidUntil = (() => {
+      const d = new Date();
+      d.setFullYear(d.getFullYear() + 1);
+      return d.toISOString().slice(0, 10);
+    })();
+    const category = p?.productType || undefined;
+    const sku = p?.variants?.edges?.[0]?.node?.id?.split("/").pop();
     return {
       meta: [
         { title: `${title} — Yu+Mi · A.D.H.D` },
@@ -45,15 +52,30 @@ export const Route = createFileRoute("/product/$handle")({
           description: rawDesc,
           ...(image ? { image: [image] } : {}),
           url,
+          brand: { "@type": "Brand", name: "Yu+Mi · A.D.H.D" },
+          ...(sku ? { sku } : {}),
+          ...(category ? { category } : {}),
           ...(price ? {
             offers: {
               "@type": "Offer",
               price: parseFloat(price.amount).toFixed(2),
               priceCurrency: price.currencyCode,
               availability: available ? "https://schema.org/InStock" : "https://schema.org/OutOfStock",
+              itemCondition: "https://schema.org/NewCondition",
+              priceValidUntil,
               url,
             },
           } : {}),
+        }),
+      }, {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            { "@type": "ListItem", position: 1, name: "Home", item: "https://mindful-luxury-emporium.lovable.app/" },
+            { "@type": "ListItem", position: 2, name: p.title, item: url },
+          ],
         }),
       }] : [],
     };

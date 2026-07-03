@@ -20,16 +20,34 @@ export const Route = createFileRoute("/category/$slug")({
       { property: "og:url", content: `https://mindful-luxury-emporium.lovable.app/category/${loaderData.cat.slug}` },
     ] : [],
     links: loaderData ? [{ rel: "canonical", href: `https://mindful-luxury-emporium.lovable.app/category/${loaderData.cat.slug}` }] : [],
-    scripts: loaderData ? [{
-      type: "application/ld+json",
-      children: JSON.stringify({
-        "@context": "https://schema.org",
-        "@type": "CollectionPage",
-        name: `${loaderData.cat.title} — Yu+Mi · A.D.H.D`,
-        description: loaderData.cat.blurb,
-        url: `https://mindful-luxury-emporium.lovable.app/category/${loaderData.cat.slug}`,
-      }),
-    }] : [],
+    scripts: loaderData ? [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "CollectionPage",
+          name: `${loaderData.cat.title} — Yu+Mi · A.D.H.D`,
+          description: loaderData.cat.blurb,
+          url: `https://mindful-luxury-emporium.lovable.app/category/${loaderData.cat.slug}`,
+          isPartOf: {
+            "@type": "WebSite",
+            name: "Yu+Mi · A.D.H.D",
+            url: "https://mindful-luxury-emporium.lovable.app",
+          },
+        }),
+      },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            { "@type": "ListItem", position: 1, name: "Home", item: "https://mindful-luxury-emporium.lovable.app/" },
+            { "@type": "ListItem", position: 2, name: loaderData.cat.title, item: `https://mindful-luxury-emporium.lovable.app/category/${loaderData.cat.slug}` },
+          ],
+        }),
+      },
+    ] : [],
   }),
   component: CategoryPage,
   notFoundComponent: () => (
