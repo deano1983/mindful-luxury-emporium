@@ -1,6 +1,6 @@
 # Active Context — READ THIS FIRST when resuming
 
-_Last updated: 2026-08-15 — NATIVE WRAP IN PROGRESS (following NDV playbook)_
+_Last updated: 2026-08-15 — NATIVE WRAP COMPLETE: APK + signed AAB built, iOS CI GREEN, pushed to GitHub_
 
 ## Project
 Yu+Mi · A.D.H.D — luxury store for neurodivergent men. Lovable-generated TanStack Start app.
@@ -18,15 +18,15 @@ keystore + keystore.properties are gitignored). Sister project: C:\dev\ndv (NDV,
 - [x] .github/workflows/ios-build.yml (unsigned xcodebuild -project App.xcodeproj archive;
       Capacitor 8 = SPM, NO workspace)
 - [x] .gitignore: .env (!.env.appshell), *.keystore, keystore.properties, native outputs, .audit/
-- [ ] npm install (RUNNING in background at session checkpoint)
-- [ ] npm run build:app verified
-- [ ] cap add android + ios
-- [ ] icons/splash generated into platforms (run generate-icons.ps1 THEN generate-native-assets.ps1)
-- [ ] yumi-upload.keystore + keystore.properties + signing config in android/app/build.gradle
-      (pattern: copy from C:\dev\ndv\android\app\build.gradle lines 19-41)
-- [ ] android/local.properties (sdk.dir=C:\\Users\\DC\\AppData\\Local\\Android\\Sdk)
-- [ ] assembleDebug APK + bundleRelease AAB (jarsigner verify)
-- [ ] commit + push to GitHub, trigger iOS CI (gh run)
+- [x] npm install, build:app verified, cap add android + ios, icons/splash generated
+- [x] yumi-upload.keystore (alias yumi-upload, in android/app/) + keystore.properties (root)
+      + signing config in android/app/build.gradle. **BACK UP BOTH FILES.**
+- [x] android/local.properties (sdk.dir)
+- [x] Debug APK: android/app/build/outputs/apk/debug/app-debug.apk (4.7 MB)
+- [x] Release AAB: android/app/build/outputs/bundle/release/app-release.aab (3.5 MB),
+      jarsigner verified (self-signed upload key — expected)
+- [x] Pushed: commit 8826bb7 → github.com/deano1983/mindful-luxury-emporium (PUBLIC)
+- [x] iOS CI GREEN first try (run 31843965790, 1m16s) — artifact YuMi-xcarchive-unsigned
 
 ## Environment (same machine as NDV)
 - JDK 21 at C:\Program Files\Microsoft\jdk-21.0.12.8-hotspot (JAVA_HOME set) — Cap 8 needs Java 21

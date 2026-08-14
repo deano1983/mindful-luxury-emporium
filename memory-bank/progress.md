@@ -18,10 +18,9 @@
 - [x] android/local.properties (sdk.dir)
 - [x] cap sync ✅ (web assets into both platforms)
 - [x] Debug APK — BUILD SUCCESSFUL 1m20s → android/app/build/outputs/apk/debug/app-debug.apk
-- [ ] Release AAB — RUNNING at checkpoint (gradle-release.log)
-- [ ] jarsigner verify AAB
-- [ ] Commit + push to github.com/deano1983/mindful-luxury-emporium (PUBLIC — verify no secrets)
-- [ ] Trigger iOS CI workflow (gh workflow run "iOS build")
+- [x] Release AAB — app-release.aab (3.5 MB), BUILD SUCCESSFUL 1m52s, jarsigner verified ✅
+- [x] Commit + push — 8826bb7 on main; secrets verified absent from tracking ✅
+- [x] iOS CI GREEN — run 31843965790 (1m16s), YuMi-xcarchive-unsigned artifact ✅
 
 ## Next steps after wrap
 - [ ] On-device test (adb + device/emulator)
