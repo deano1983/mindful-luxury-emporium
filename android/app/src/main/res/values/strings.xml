@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Yu+Mi</string>
+    <string name="title_activity_main">Yu+Mi</string>
+    <string name="package_name">au.com.yumiadhd</string>
+    <string name="custom_url_scheme">au.com.yumiadhd</string>
+</resources>

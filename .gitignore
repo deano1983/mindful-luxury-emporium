@@ -30,3 +30,21 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# --- Yu+Mi native/store safety ---
+# never commit secrets or signing material
+.env
+!.env.appshell
+*.keystore
+keystore.properties
+# native build outputs / machine-local
+android/local.properties
+android/.gradle/
+android/app/build/
+android/build/
+android/capacitor-cordova-android-plugins/build/
+ios/App/build/
+ios/DerivedData/
+# NOTE: memory-bank/ IS committed on purpose — it is the resumable session state.
+# local audit dumps (catalog image review)
+.audit/
