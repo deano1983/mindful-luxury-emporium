@@ -1,6 +1,15 @@
 # Active Context — READ THIS FIRST when resuming
 
-_Last updated: 2026-08-15 — NATIVE WRAP COMPLETE: APK + signed AAB built, iOS CI GREEN, pushed to GitHub_
+_Last updated: 2026-08-15 — WRAP COMPLETE + WEB LIVE: https://yumi-adhd-sanctuary.netlify.app_
+
+## Web deploy — LIVE
+- Netlify site: **yumi-adhd-sanctuary** (id ffb19c35-de7b-4e89-bf40-496512cc85a0), deployed via
+  zip API (deploy_source=api), reusing NDV's token from C:\dev\ndv\.netlify-token.
+- /privacy + /terms resolve via public/_redirects SPA fallback (/* /index.html 200) ✅
+- ⚠️ GOTCHA: sites created via API inherited sso_login=True (edge-access 401 "Login Redirect").
+  Fix: PATCH /sites/{id} {"sso_login":false,"account_sso_login":false} → 200. Remember for future sites.
+- Custom domain: none yet — options yumiadhd.com.au etc.; wire in Netlify dashboard when bought.
+- Store listings drafted: store/play-listing.md + store/appstore-listing.md (privacy URL live).
 
 ## Project
 Yu+Mi · A.D.H.D — luxury store for neurodivergent men. Lovable-generated TanStack Start app.
