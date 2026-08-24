@@ -1,6 +1,16 @@
 # Active Context — READ THIS FIRST when resuming
 
-_Last updated: 2026-08-15 — WRAP COMPLETE + WEB LIVE: https://yumi-adhd-sanctuary.netlify.app_
+_Last updated: 2026-08-24 — DSers mapping CSV exported (93 products, supplier URLs verified absent)_
+
+## 📦 2026-08-24: DSers product-mapping CSV
+- `store/dsers-product-mapping.csv` — 93 rows: live numeric Shopify product IDs + titles +
+  handles (fresh Storefront API pull). Supplier columns BLANK: verified 0 products carry
+  `custom.supplier_url` metafields / AliExpress links in descriptions; source URLs from the
+  original import were never recorded. Fill via DSers image search, then re-run
+  `scripts/export-dsers-mapping.mjs <shop> <token> <out.csv>` (auto-fills from
+  custom.supplier_url/supplier_name metafields or description URLs). Script identical to
+  NDV's. Store: yu-mi-a-d-h-d-sanctuary-zd6hf.myshopify.com.
+
 
 ## Web deploy — LIVE
 - Netlify site: **yumi-adhd-sanctuary** (id ffb19c35-de7b-4e89-bf40-496512cc85a0), deployed via
