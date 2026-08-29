@@ -1,5 +1,18 @@
 # Active Context — READ THIS FIRST when resuming
 
+## 💳 2026-08-29: NDIS PAYMENTS & INVOICING — ADDED (mirrors NDV)
+- Same two-option NDIS checkout as NDV (see C:\dev\ndv\memory-bank\activeContext.md):
+  CartDrawer NDIS section + /ndis route + Footer link; Shopify cart attributes
+  (cartAttributesUpdate in cartStore.setNdisAttributes) for the card flow.
+- New: src/lib/ndis.ts (brand: "Yu+Mi · A.D.H.D Sanctuary", contact
+  concierge@yumiadhd.co, prefix YMA, AUD), components/NdisCheckout.tsx +
+  NdisInvoicePreview.tsx, routes/ndis.tsx. Client-side tax invoice (print/PDF/
+  download/mailto) — works in web + app WebView, no backend needed.
+- ✅ 29/08 (later): ABN 61 794 639 443 / ACN 72 448 917 / Commonwealth Bank BSB 062-948
+  Acct 72448917 filled in src/lib/ndis.ts; own scripts/deploy-netlify.ps1 added
+  (site ffb19c35-de7b-4e89-bf40-496512cc85a0). Full pipeline (build + cap copy +
+  AAB + deploy) run via C:\dev\ndis-full-pipeline.bat — logs C:\dev\mle-*.log.
+
 _Last updated: 2026-08-24 — DSers mapping CSV exported (93 products, supplier URLs verified absent)_
 
 ## 📦 2026-08-24: DSers product-mapping CSV

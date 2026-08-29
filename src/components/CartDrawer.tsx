@@ -4,13 +4,22 @@ import { Badge } from "@/components/ui/badge";
 import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { ShoppingBag, Minus, Plus, Trash2, ExternalLink, Loader2 } from "lucide-react";
 import { useCartStore } from "@/stores/cartStore";
+import { NdisCheckout } from "@/components/NdisCheckout";
 
 export function CartDrawer() {
   const [open, setOpen] = useState(false);
   const { items, isLoading, isSyncing, updateQuantity, removeItem, getCheckoutUrl, syncCart } = useCartStore();
+  const setNdisAttributes = useCartStore(s => s.setNdisAttributes);
   const totalItems = items.reduce((s, i) => s + i.quantity, 0);
   const totalPrice = items.reduce((s, i) => s + parseFloat(i.price.amount) * i.quantity, 0);
   const currency = items[0]?.price.currencyCode || "AUD";
+  const ndisLines = items.map(i => ({
+    description: i.selectedOptions.length > 0
+      ? `${i.product.node.title} (${i.selectedOptions.map(o => o.value).join(", ")})`
+      : i.product.node.title,
+    quantity: i.quantity,
+    unitPrice: parseFloat(i.price.amount),
+  }));
 
   useEffect(() => { if (open) syncCart(); }, [open, syncCart]);
 
@@ -77,6 +86,18 @@ export function CartDrawer() {
                   <span className="text-sm uppercase tracking-widest text-muted-foreground">Subtotal</span>
                   <span className="text-xl font-display gold-grad">{currency} {totalPrice.toFixed(2)}</span>
                 </div>
+                <NdisCheckout
+                  lines={ndisLines}
+                  currency={currency}
+                  onCardDetailsSaved={async (d) => {
+                    await setNdisAttributes([
+                      { key: "NDIS invoice", value: "Yes — self-managed (card + tax invoice)" },
+                      { key: "NDIS participant", value: d.participantName },
+                      { key: "NDIS number", value: d.ndisNumber },
+                      { key: "NDIS contact email", value: d.email },
+                    ]);
+                  }}
+                />
                 <Button onClick={handleCheckout} className="w-full bg-primary text-primary-foreground hover:bg-primary/90 rounded-sm" size="lg" disabled={isLoading || isSyncing}>
                   {isLoading || isSyncing ? <Loader2 className="w-4 h-4 animate-spin" /> : <><ExternalLink className="w-4 h-4 mr-2" />Proceed to Checkout</>}
                 </Button>

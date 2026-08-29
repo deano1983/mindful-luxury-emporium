@@ -24,6 +24,7 @@ interface CartStore {
   clearCart: () => void;
   syncCart: () => Promise<void>;
   getCheckoutUrl: () => string | null;
+  setNdisAttributes: (attributes: Array<{ key: string; value: string }>) => Promise<void>;
 }
 
 const CART_QUERY = `query cart($id: ID!) { cart(id: $id) { id totalQuantity } }`;
@@ -31,6 +32,8 @@ const CART_CREATE = `mutation cartCreate($input: CartInput!) { cartCreate(input:
 const CART_ADD = `mutation cartLinesAdd($cartId: ID!, $lines: [CartLineInput!]!) { cartLinesAdd(cartId: $cartId, lines: $lines) { cart { id lines(first: 100) { edges { node { id merchandise { ... on ProductVariant { id } } } } } } userErrors { field message } } }`;
 const CART_UPDATE = `mutation cartLinesUpdate($cartId: ID!, $lines: [CartLineUpdateInput!]!) { cartLinesUpdate(cartId: $cartId, lines: $lines) { cart { id } userErrors { field message } } }`;
 const CART_REMOVE = `mutation cartLinesRemove($cartId: ID!, $lineIds: [ID!]!) { cartLinesRemove(cartId: $cartId, lineIds: $lineIds) { cart { id } userErrors { field message } } }`;
+// NDIS participant details ride along with the cart into the Shopify order admin.
+const CART_ATTRIBUTES_UPDATE = `mutation cartAttributesUpdate($cartId: ID!, $attributes: [AttributeInput!]!) { cartAttributesUpdate(cartId: $cartId, attributes: $attributes) { cart { id } userErrors { field message } } }`;
 
 function formatCheckoutUrl(url: string): string {
   try {
@@ -136,6 +139,18 @@ export const useCartStore = create<CartStore>()(
 
       clearCart: () => set({ items: [], cartId: null, checkoutUrl: null }),
       getCheckoutUrl: () => get().checkoutUrl,
+
+      setNdisAttributes: async (attributes) => {
+        const cartId = get().cartId;
+        if (!cartId) return;
+        try {
+          const data = await storefrontApiRequest(CART_ATTRIBUTES_UPDATE, { cartId, attributes });
+          const errs = data?.data?.cartAttributesUpdate?.userErrors;
+          if (errs?.length) console.error("NDIS cart attributes:", errs);
+        } catch (err) {
+          console.error("NDIS cart attributes failed:", err);
+        }
+      },
 
       syncCart: async () => {
         const { cartId, isSyncing, clearCart } = get();

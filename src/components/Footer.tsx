@@ -18,6 +18,7 @@ export function Footer() {
           <div className="mt-4 flex gap-4 text-xs">
             <Link to="/privacy" className="text-muted-foreground hover:text-primary transition-colors">Privacy Policy</Link>
             <Link to="/terms" className="text-muted-foreground hover:text-primary transition-colors">Terms &amp; Conditions</Link>
+            <Link to="/ndis" className="text-muted-foreground hover:text-primary transition-colors">NDIS &amp; Invoice Payments</Link>
           </div>
         </div>
       </div>
