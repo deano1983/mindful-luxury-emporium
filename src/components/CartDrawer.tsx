@@ -8,7 +8,7 @@ import { NdisCheckout } from "@/components/NdisCheckout";
 
 export function CartDrawer() {
   const [open, setOpen] = useState(false);
-  const { items, isLoading, isSyncing, updateQuantity, removeItem, getCheckoutUrl, syncCart } = useCartStore();
+  const { items, isLoading, isSyncing, updateQuantity, removeItem, startCheckout, syncCart } = useCartStore();
   const setNdisAttributes = useCartStore(s => s.setNdisAttributes);
   const totalItems = items.reduce((s, i) => s + i.quantity, 0);
   const totalPrice = items.reduce((s, i) => s + parseFloat(i.price.amount) * i.quantity, 0);
@@ -23,9 +23,9 @@ export function CartDrawer() {
 
   useEffect(() => { if (open) syncCart(); }, [open, syncCart]);
 
-  const handleCheckout = () => {
-    const url = getCheckoutUrl();
-    if (url) { window.open(url, "_blank"); setOpen(false); }
+  const handleCheckout = async () => {
+    setOpen(false);
+    await startCheckout();
   };
 
   return (

@@ -1,0 +1,50 @@
+[36mvite v7.3.6 [32mbuilding client environment for production...[36m[39m
+transforming...
+[32m✓[39m 2004 modules transformed.
+rendering chunks...
+computing gzip size...
+[2mdist/client/[22m[32massets/cat-electronics-DOgYa4i6.jpg    [39m[1m[2m 33.68 kB[22m[1m[22m
+[2mdist/client/[22m[32massets/hero-fJt7TMLW.jpg               [39m[1m[2m 77.68 kB[22m[1m[22m
+[2mdist/client/[22m[32massets/cat-misc-iYTx2QsP.jpg           [39m[1m[2m 79.33 kB[22m[1m[22m
+[2mdist/client/[22m[32massets/cat-accessories-WJqbUawZ.jpg    [39m[1m[2m102.41 kB[22m[1m[22m
+[2mdist/client/[22m[32massets/cat-bedding-CTPky0Hl.jpg        [39m[1m[2m114.87 kB[22m[1m[22m
+[2mdist/client/[22m[32massets/cat-fashion-y3KpX3Dm.jpg        [39m[1m[2m209.71 kB[22m[1m[22m
+[2mdist/client/[22m[35massets/styles-CY1X7Cy6.css             [39m[1m[2m 78.74 kB[22m[1m[22m[2m │ gzip:  13.36 kB[22m
+[2mdist/client/[22m[36massets/category._slug-DVzr2Z2E.js      [39m[1m[2m  0.26 kB[22m[1m[22m[2m │ gzip:   0.21 kB[22m
+[2mdist/client/[22m[36massets/thank-you-B78f34du.js           [39m[1m[2m  0.96 kB[22m[1m[22m[2m │ gzip:   0.55 kB[22m
+[2mdist/client/[22m[36massets/category._slug-DproL8d7.js      [39m[1m[2m  1.56 kB[22m[1m[22m[2m │ gzip:   0.77 kB[22m
+[2mdist/client/[22m[36massets/ProductCard-TffQwflm.js         [39m[1m[2m  1.62 kB[22m[1m[22m[2m │ gzip:   0.84 kB[22m
+[2mdist/client/[22m[36massets/product._handle-Da52-BsN.js     [39m[1m[2m  3.67 kB[22m[1m[22m[2m │ gzip:   1.51 kB[22m
+[2mdist/client/[22m[36massets/ndis-BKfjR3C4.js                [39m[1m[2m  4.65 kB[22m[1m[22m[2m │ gzip:   1.81 kB[22m
+[2mdist/client/[22m[36massets/index-twbiQG-S.js               [39m[1m[2m  4.77 kB[22m[1m[22m[2m │ gzip:   1.78 kB[22m
+[2mdist/client/[22m[36massets/privacy-C8EIjpwU.js             [39m[1m[2m  6.64 kB[22m[1m[22m[2m │ gzip:   2.24 kB[22m
+[2mdist/client/[22m[36massets/terms-LQ8BT6Ri.js               [39m[1m[2m  7.04 kB[22m[1m[22m[2m │ gzip:   2.48 kB[22m
+[2mdist/client/[22m[36massets/useQuery-Tp1gxJAO.js            [39m[1m[2m  8.82 kB[22m[1m[22m[2m │ gzip:   3.21 kB[22m
+[2mdist/client/[22m[36massets/NdisInvoicePreview-CIIsqXz_.js  [39m[1m[2m  9.61 kB[22m[1m[22m[2m │ gzip:   3.75 kB[22m
+[2mdist/client/[22m[36massets/check-PUd4LJYf.js               [39m[1m[2m 33.63 kB[22m[1m[22m[2m │ gzip:  11.21 kB[22m
+[2mdist/client/[22m[36massets/Footer-CsxN6NpM.js              [39m[1m[2m 51.68 kB[22m[1m[22m[2m │ gzip:  17.30 kB[22m
+[2mdist/client/[22m[36massets/index-BAVkTnx7.js               [39m[1m[2m395.66 kB[22m[1m[22m[2m │ gzip: 125.56 kB[22m
+[32m✓ built in 10.18s[39m
+[36mvite v7.3.6 [32mbuilding ssr environment for production...[36m[39m
+transforming...
+[32m✓[39m 96 modules transformed.
+rendering chunks...
+[2mdist/server/[22m[36massets/empty-plugin-adapters-BFgPZ6_d.js       [39m[1m[2m 0.13 kB[22m[1m[22m
+[2mdist/server/[22m[36massets/category._slug-B5vE-2C-.js              [39m[1m[2m 0.35 kB[22m[1m[22m
+[2mdist/server/[22m[36massets/thank-you-CIaTUPVg.js                   [39m[1m[2m 1.62 kB[22m[1m[22m
+[2mdist/server/[22m[36massets/start-Dcbu8YPO.js                       [39m[1m[2m 1.71 kB[22m[1m[22m
+[2mdist/server/[22m[36massets/button-DjOZMqFS.js                      [39m[1m[2m 1.81 kB[22m[1m[22m
+[2mdist/server/[22m[36massets/_tanstack-start-manifest_v-DyT9uU7L.js  [39m[1m[2m 2.28 kB[22m[1m[22m
+[2mdist/server/[22m[36massets/ProductCard-BfZSrO7N.js                 [39m[1m[2m 2.55 kB[22m[1m[22m
+[2mdist/server/[22m[36massets/category._slug-C_HJFnf-.js              [39m[1m[2m 2.67 kB[22m[1m[22m
+[2mdist/server/[22m[36mserver.js                                      [39m[1m[2m 3.34 kB[22m[1m[22m
+[2mdist/server/[22m[36massets/ndis-BihMKbdF.js                        [39m[1m[2m 5.27 kB[22m[1m[22m
+[2mdist/server/[22m[36massets/product._handle-DvIFtsXQ.js             [39m[1m[2m 6.00 kB[22m[1m[22m
+[2mdist/server/[22m[36massets/index-BkPNnpP8.js                       [39m[1m[2m 7.00 kB[22m[1m[22m
+[2mdist/server/[22m[36massets/privacy-pvy9xdho.js                     [39m[1m[2m 9.52 kB[22m[1m[22m
+[2mdist/server/[22m[36massets/terms-O1hqhQbl.js                       [39m[1m[2m 9.59 kB[22m[1m[22m
+[2mdist/server/[22m[36massets/NdisInvoicePreview-10bI2zbe.js          [39m[1m[2m12.34 kB[22m[1m[22m
+[2mdist/server/[22m[36massets/Footer-IKwoFM29.js                      [39m[1m[2m22.16 kB[22m[1m[22m
+[2mdist/server/[22m[36massets/router-DaHvLjtD.js                      [39m[1m[2m25.61 kB[22m[1m[22m
+[2mdist/server/[22m[36massets/server-DoMDVsAc.js                      [39m[1m[2m61.64 kB[22m[1m[22m
+[32m✓ built in 1.26s[39m

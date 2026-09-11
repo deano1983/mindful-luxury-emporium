@@ -1,5 +1,15 @@
 # Active Context — READ THIS FIRST when resuming
 
+## 📦 2026-08-29 (later): DSERS CSV + ACCOUNT SETUP
+- store/yumi-adhd-dsers-product-mapping.csv — fresh 29/08 pull, 93 rows, supplier
+  columns blank (same as before: no custom.supplier_url metafields recorded at import).
+  Supplier auto-fill needs LOVABLE_API_KEY + FIRECRAWL_API_KEY (user) — resolver lives
+  in the NDV repo (src/lib/aliexpress-resolver.functions.ts) and must be adapted for
+  men's catalog (its blacklist rejects "men's"! — NDV-tuned).
+- store/ACCOUNT-SETUP-GUIDE.md (copied from NDV): shipping rates to enter
+  (AUD 12.90 std / AUD 24.90 express), DSers import steps, account checklist.
+  Shopify Admin API token (shpat_...) would let Cline set rates programmatically.
+
 ## 💳 2026-08-29: NDIS PAYMENTS & INVOICING — ADDED (mirrors NDV)
 - Same two-option NDIS checkout as NDV (see C:\dev\ndv\memory-bank\activeContext.md):
   CartDrawer NDIS section + /ndis route + Footer link; Shopify cart attributes

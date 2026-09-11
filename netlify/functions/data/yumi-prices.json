@@ -1,0 +1,746 @@
+{
+    "wooden-marble-run-sculpture":  {
+                                        "variantId":  "gid://shopify/ProductVariant/48331147149530",
+                                        "title":  "Wooden Marble Run Sculpture",
+                                        "category":  "desk",
+                                        "amountCents":  48000,
+                                        "currency":  "aud",
+                                        "image":  null
+                                    },
+    "bearing-clicker-fidget-slider":  {
+                                          "variantId":  "gid://shopify/ProductVariant/48331147083994",
+                                          "title":  "Bearing Clicker Fidget Slider",
+                                          "category":  "edc",
+                                          "amountCents":  14000,
+                                          "currency":  "aud",
+                                          "image":  null
+                                      },
+    "obsidian-worry-stone-set":  {
+                                     "variantId":  "gid://shopify/ProductVariant/48331146920154",
+                                     "title":  "Obsidian Worry Stone Set",
+                                     "category":  "calm",
+                                     "amountCents":  12000,
+                                     "currency":  "aud",
+                                     "image":  null
+                                 },
+    "brass-spinning-top-desk-set":  {
+                                        "variantId":  "gid://shopify/ProductVariant/48331146887386",
+                                        "title":  "Brass Spinning Top â€” Desk Set",
+                                        "category":  "desk",
+                                        "amountCents":  16500,
+                                        "currency":  "aud",
+                                        "image":  null
+                                    },
+    "weighted-steel-fidget-cube":  {
+                                       "variantId":  "gid://shopify/ProductVariant/48331146723546",
+                                       "title":  "Weighted Steel Fidget Cube",
+                                       "category":  "edc",
+                                       "amountCents":  19500,
+                                       "currency":  "aud",
+                                       "image":  null
+                                   },
+    "modular-geometric-puzzle-hardwood":  {
+                                              "variantId":  "gid://shopify/ProductVariant/48331146658010",
+                                              "title":  "Modular Geometric Puzzle â€” Hardwood",
+                                              "category":  "focus",
+                                              "amountCents":  26000,
+                                              "currency":  "aud",
+                                              "image":  null
+                                          },
+    "magnetic-sphere-constellation-set":  {
+                                              "variantId":  "gid://shopify/ProductVariant/48331146428634",
+                                              "title":  "Magnetic Sphere Constellation Set",
+                                              "category":  "fidget",
+                                              "amountCents":  18000,
+                                              "currency":  "aud",
+                                              "image":  null
+                                          },
+    "titanium-orbit-pen":  {
+                               "variantId":  "gid://shopify/ProductVariant/48331146232026",
+                               "title":  "Titanium Orbit Pen",
+                               "category":  "edc",
+                               "amountCents":  23000,
+                               "currency":  "aud",
+                               "image":  null
+                           },
+    "kinetic-sand-table-walnut":  {
+                                      "variantId":  "gid://shopify/ProductVariant/48331146199258",
+                                      "title":  "Kinetic Sand Table â€” Walnut",
+                                      "category":  "focus",
+                                      "amountCents":  129000,
+                                      "currency":  "aud",
+                                      "image":  null
+                                  },
+    "circadian-tunable-desk-lamp":  {
+                                        "variantId":  "gid://shopify/ProductVariant/48331146166490",
+                                        "title":  "Circadian Tunable Desk Lamp",
+                                        "category":  "electronics",
+                                        "amountCents":  32000,
+                                        "currency":  "aud",
+                                        "image":  null
+                                    },
+    "white-noise-sound-machine":  {
+                                      "variantId":  "gid://shopify/ProductVariant/48331146002650",
+                                      "title":  "White Noise Sound Machine",
+                                      "category":  "bedding",
+                                      "amountCents":  15000,
+                                      "currency":  "aud",
+                                      "image":  null
+                                  },
+    "blackout-thermal-curtain-charcoal":  {
+                                              "variantId":  "gid://shopify/ProductVariant/48331145937114",
+                                              "title":  "Blackout Thermal Curtain â€” Charcoal",
+                                              "category":  "bedding",
+                                              "amountCents":  24000,
+                                              "currency":  "aud",
+                                              "image":  null
+                                          },
+    "climate-mattress-topper-dual-zone-cooling":  {
+                                                      "variantId":  "gid://shopify/ProductVariant/48331145871578",
+                                                      "title":  "Climate Mattress Topper â€” Dual-Zone Cooling",
+                                                      "category":  "bedding",
+                                                      "amountCents":  189000,
+                                                      "currency":  "aud",
+                                                      "image":  null
+                                                  },
+    "memory-foam-contour-pillow":  {
+                                       "variantId":  "gid://shopify/ProductVariant/48331145707738",
+                                       "title":  "Memory Foam Contour Pillow",
+                                       "category":  "bedding",
+                                       "amountCents":  21000,
+                                       "currency":  "aud",
+                                       "image":  null
+                                   },
+    "down-alternative-pillow-medium-loft":  {
+                                                "variantId":  "gid://shopify/ProductVariant/48331145642202",
+                                                "title":  "Down-Alternative Pillow â€” Medium Loft",
+                                                "category":  "bedding",
+                                                "amountCents":  16000,
+                                                "currency":  "aud",
+                                                "image":  null
+                                            },
+    "mulberry-silk-pillowcase-22mm-charcoal":  {
+                                                   "variantId":  "gid://shopify/ProductVariant/48331144462554",
+                                                   "title":  "Mulberry Silk Pillowcase 22mm â€” Charcoal",
+                                                   "category":  "bedding",
+                                                   "amountCents":  18000,
+                                                   "currency":  "aud",
+                                                   "image":  null
+                                               },
+    "eucalyptus-cloud-comforter-white":  {
+                                             "variantId":  "gid://shopify/ProductVariant/48331144397018",
+                                             "title":  "Eucalyptus Cloud Comforter â€” White",
+                                             "category":  "bedding",
+                                             "amountCents":  59000,
+                                             "currency":  "aud",
+                                             "image":  null
+                                         },
+    "french-linen-duvet-set-stone":  {
+                                         "variantId":  "gid://shopify/ProductVariant/48331144167642",
+                                         "title":  "French Linen Duvet Set â€” Stone",
+                                         "category":  "bedding",
+                                         "amountCents":  56000,
+                                         "currency":  "aud",
+                                         "image":  null
+                                     },
+    "percale-duvet-cover-white":  {
+                                      "variantId":  "gid://shopify/ProductVariant/48331144036570",
+                                      "title":  "Percale Duvet Cover â€” White",
+                                      "category":  "bedding",
+                                      "amountCents":  39000,
+                                      "currency":  "aud",
+                                      "image":  null
+                                  },
+    "600tc-sateen-sheet-set-ivory":  {
+                                         "variantId":  "gid://shopify/ProductVariant/48331143938266",
+                                         "title":  "600TC Sateen Sheet Set â€” Ivory",
+                                         "category":  "bedding",
+                                         "amountCents":  48000,
+                                         "currency":  "aud",
+                                         "image":  null
+                                     },
+    "glass-bead-weighted-blanket-9kg":  {
+                                            "variantId":  "gid://shopify/ProductVariant/48331143774426",
+                                            "title":  "Glass Bead Weighted Blanket 9kg",
+                                            "category":  "bedding",
+                                            "amountCents":  42000,
+                                            "currency":  "aud",
+                                            "image":  null
+                                        },
+    "chunky-knit-weighted-blanket-asteroid":  {
+                                                  "variantId":  "gid://shopify/ProductVariant/48331143577818",
+                                                  "title":  "Chunky Knit Weighted Blanket â€” Asteroid",
+                                                  "category":  "bedding",
+                                                  "amountCents":  54000,
+                                                  "currency":  "aud",
+                                                  "image":  null
+                                              },
+    "brogue-derby-cognac":  {
+                                "variantId":  "gid://shopify/ProductVariant/48331143348442",
+                                "title":  "Brogue Derby â€” Cognac",
+                                "category":  "fashion",
+                                "amountCents":  72000,
+                                "currency":  "aud",
+                                "image":  null
+                            },
+    "chunky-court-sneaker-white":  {
+                                       "variantId":  "gid://shopify/ProductVariant/48331143184602",
+                                       "title":  "Chunky Court Sneaker â€” White",
+                                       "category":  "fashion",
+                                       "amountCents":  46000,
+                                       "currency":  "aud",
+                                       "image":  null
+                                   },
+    "diagonal-track-pant-black":  {
+                                      "variantId":  "gid://shopify/ProductVariant/48331143020762",
+                                      "title":  "Diagonal Track Pant â€” Black",
+                                      "category":  "fashion",
+                                      "amountCents":  31000,
+                                      "currency":  "aud",
+                                      "image":  null
+                                  },
+    "fine-wool-trouser-graphite":  {
+                                       "variantId":  "gid://shopify/ProductVariant/48331142791386",
+                                       "title":  "Fine Wool Trouser â€” Graphite",
+                                       "category":  "fashion",
+                                       "amountCents":  42000,
+                                       "currency":  "aud",
+                                       "image":  null
+                                   },
+    "lambskin-moto-jacket-onyx":  {
+                                      "variantId":  "gid://shopify/ProductVariant/48331142562010",
+                                      "title":  "Lambskin Moto Jacket â€” Onyx",
+                                      "category":  "fashion",
+                                      "amountCents":  149000,
+                                      "currency":  "aud",
+                                      "image":  null
+                                  },
+    "down-puffer-matte-black":  {
+                                    "variantId":  "gid://shopify/ProductVariant/48331142332634",
+                                    "title":  "Down Puffer â€” Matte Black",
+                                    "category":  "fashion",
+                                    "amountCents":  89000,
+                                    "currency":  "aud",
+                                    "image":  null
+                                },
+    "wool-cashmere-overcoat-camel":  {
+                                         "variantId":  "gid://shopify/ProductVariant/48331142168794",
+                                         "title":  "Wool-Cashmere Overcoat â€” Camel",
+                                         "category":  "cashmere",
+                                         "amountCents":  129000,
+                                         "currency":  "aud",
+                                         "image":  null
+                                     },
+    "silk-linen-tee-obsidian":  {
+                                    "variantId":  "gid://shopify/ProductVariant/48331141906650",
+                                    "title":  "Silk-Linen Tee â€” Obsidian",
+                                    "category":  "fashion",
+                                    "amountCents":  24500,
+                                    "currency":  "aud",
+                                    "image":  null
+                                },
+    "merino-rollneck-black":  {
+                                  "variantId":  "gid://shopify/ProductVariant/48331141710042",
+                                  "title":  "Merino Rollneck â€” Black",
+                                  "category":  "fashion",
+                                  "amountCents":  39500,
+                                  "currency":  "aud",
+                                  "image":  null
+                              },
+    "merino-seamless-turtleneck-ink":  {
+                                           "variantId":  "gid://shopify/ProductVariant/48331141513434",
+                                           "title":  "Merino Seamless Turtleneck â€” Ink",
+                                           "category":  "fashion",
+                                           "amountCents":  44000,
+                                           "currency":  "aud",
+                                           "image":  null
+                                       },
+    "cashmere-crewneck-ash":  {
+                                  "variantId":  "gid://shopify/ProductVariant/48331141218522",
+                                  "title":  "Cashmere Crewneck â€” Ash",
+                                  "category":  "cashmere",
+                                  "amountCents":  69000,
+                                  "currency":  "aud",
+                                  "image":  null
+                              },
+    "cashmere-blend-hoodie-slate":  {
+                                        "variantId":  "gid://shopify/ProductVariant/48331141054682",
+                                        "title":  "Cashmere-Blend Hoodie â€” Slate",
+                                        "category":  "cashmere",
+                                        "amountCents":  62000,
+                                        "currency":  "aud",
+                                        "image":  null
+                                    },
+    "heavyweight-fleece-hoodie-bone":  {
+                                           "variantId":  "gid://shopify/ProductVariant/48331140858074",
+                                           "title":  "Heavyweight Fleece Hoodie â€” Bone",
+                                           "category":  "fashion",
+                                           "amountCents":  28900,
+                                           "currency":  "aud",
+                                           "image":  null
+                                       },
+    "portable-espresso-maker-stainless":  {
+                                              "variantId":  "gid://shopify/ProductVariant/48331139121370",
+                                              "title":  "Portable Espresso Maker â€” Stainless",
+                                              "category":  "coffee",
+                                              "amountCents":  21900,
+                                              "currency":  "aud",
+                                              "image":  null
+                                          },
+    "titanium-smart-ring-sleep-recovery-tracker":  {
+                                                       "variantId":  "gid://shopify/ProductVariant/48331138957530",
+                                                       "title":  "Titanium Smart Ring â€” Sleep \u0026 Recovery Tracker",
+                                                       "category":  "electronics",
+                                                       "amountCents":  49900,
+                                                       "currency":  "aud",
+                                                       "image":  null
+                                                   },
+    "bone-conduction-open-ear-headset":  {
+                                             "variantId":  "gid://shopify/ProductVariant/48331138793690",
+                                             "title":  "Bone Conduction Open-Ear Headset",
+                                             "category":  "audio",
+                                             "amountCents":  29900,
+                                             "currency":  "aud",
+                                             "image":  null
+                                         },
+    "anc-over-ear-headphones-matte-black":  {
+                                                "variantId":  "gid://shopify/ProductVariant/48331138597082",
+                                                "title":  "ANC Over-Ear Headphones â€” Matte Black",
+                                                "category":  "audio",
+                                                "amountCents":  54900,
+                                                "currency":  "aud",
+                                                "image":  null
+                                            },
+    "multi-styler-hot-air-brush-ionic":  {
+                                             "variantId":  "gid://shopify/ProductVariant/48331138564314",
+                                             "title":  "Multi-Styler Hot Air Brush â€” Ionic",
+                                             "category":  "electronics",
+                                             "amountCents":  34900,
+                                             "currency":  "aud",
+                                             "image":  null
+                                         },
+    "ambient-bias-lighting-kit-65-screen-sync":  {
+                                                     "variantId":  "gid://shopify/ProductVariant/48331138433242",
+                                                     "title":  "Ambient Bias Lighting Kit â€” 65\" Screen Sync",
+                                                     "category":  "electronics",
+                                                     "amountCents":  28900,
+                                                     "currency":  "aud",
+                                                     "image":  null
+                                                 },
+    "percussion-therapy-gun-pro-brushless":  {
+                                                 "variantId":  "gid://shopify/ProductVariant/48331138367706",
+                                                 "title":  "Percussion Therapy Gun Pro â€” Brushless",
+                                                 "category":  "electronics",
+                                                 "amountCents":  42900,
+                                                 "currency":  "aud",
+                                                 "image":  null
+                                             },
+    "ink-note-tablet-10-3-stylus-included":  {
+                                                 "variantId":  "gid://shopify/ProductVariant/48331138302170",
+                                                 "title":  "Ink Note Tablet 10.3\" â€” Stylus Included",
+                                                 "category":  "electronics",
+                                                 "amountCents":  74900,
+                                                 "currency":  "aud",
+                                                 "image":  null
+                                             },
+    "oval-crystal-sunglasses-blue-gradient":  {
+                                                  "variantId":  "gid://shopify/ProductVariant/48331138236634",
+                                                  "title":  "Oval Crystal Sunglasses â€” Blue Gradient",
+                                                  "category":  "accessories",
+                                                  "amountCents":  36500,
+                                                  "currency":  "aud",
+                                                  "image":  null
+                                              },
+    "audio-smart-sunglasses-matte-black-polarized":  {
+                                                         "variantId":  "gid://shopify/ProductVariant/48331138203866",
+                                                         "title":  "Audio Smart Sunglasses â€” Matte Black Polarized",
+                                                         "category":  "accessories",
+                                                         "amountCents":  38900,
+                                                         "currency":  "aud",
+                                                         "image":  null
+                                                     },
+    "iced-hoop-earrings-30mm-gold-vermeil":  {
+                                                 "variantId":  "gid://shopify/ProductVariant/48331138072794",
+                                                 "title":  "Iced Hoop Earrings 30mm â€” Gold Vermeil",
+                                                 "category":  "accessories",
+                                                 "amountCents":  54000,
+                                                 "currency":  "aud",
+                                                 "image":  null
+                                             },
+    "halo-eternity-band-gold-vermeil-moissanite":  {
+                                                       "variantId":  "gid://shopify/ProductVariant/48331137843418",
+                                                       "title":  "Halo Eternity Band â€” Gold Vermeil Moissanite",
+                                                       "category":  "accessories",
+                                                       "amountCents":  62000,
+                                                       "currency":  "aud",
+                                                       "image":  null
+                                                   },
+    "signet-pinky-ring-925-silver-moissanite":  {
+                                                    "variantId":  "gid://shopify/ProductVariant/48331137679578",
+                                                    "title":  "Signet Pinky Ring â€” 925 Silver Moissanite",
+                                                    "category":  "accessories",
+                                                    "amountCents":  78000,
+                                                    "currency":  "aud",
+                                                    "image":  null
+                                                },
+    "solitaire-pendant-3ct-gold-vermeil-moissanite":  {
+                                                          "variantId":  "gid://shopify/ProductVariant/48331137515738",
+                                                          "title":  "Solitaire Pendant 3ct â€” Gold Vermeil Moissanite",
+                                                          "category":  "accessories",
+                                                          "amountCents":  145000,
+                                                          "currency":  "aud",
+                                                          "image":  null
+                                                      },
+    "presidential-iced-bracelet-12mm-gold-vermeil":  {
+                                                         "variantId":  "gid://shopify/ProductVariant/48331137482970",
+                                                         "title":  "Presidential Iced Bracelet 12mm â€” Gold Vermeil",
+                                                         "category":  "accessories",
+                                                         "amountCents":  115000,
+                                                         "currency":  "aud",
+                                                         "image":  null
+                                                     },
+    "tennis-bracelet-5mm-925-silver-moissanite":  {
+                                                      "variantId":  "gid://shopify/ProductVariant/48331137384666",
+                                                      "title":  "Tennis Bracelet 5mm â€” 925 Silver Moissanite",
+                                                      "category":  "accessories",
+                                                      "amountCents":  129000,
+                                                      "currency":  "aud",
+                                                      "image":  null
+                                                  },
+    "iced-miami-cuban-bracelet-10mm-gold-vermeil-moissanite":  {
+                                                                   "variantId":  "gid://shopify/ProductVariant/48331137220826",
+                                                                   "title":  "Iced Miami Cuban Bracelet 10mm â€” Gold Vermeil Moissanite",
+                                                                   "category":  "accessories",
+                                                                   "amountCents":  99000,
+                                                                   "currency":  "aud",
+                                                                   "image":  null
+                                                               },
+    "iced-figaro-chain-8mm-gold-vermeil-moissanite":  {
+                                                          "variantId":  "gid://shopify/ProductVariant/48331137155290",
+                                                          "title":  "Iced Figaro Chain 8mm â€” Gold Vermeil Moissanite",
+                                                          "category":  "accessories",
+                                                          "amountCents":  139000,
+                                                          "currency":  "aud",
+                                                          "image":  null
+                                                      },
+    "iced-rope-chain-6mm-gold-vermeil-moissanite":  {
+                                                        "variantId":  "gid://shopify/ProductVariant/48331137089754",
+                                                        "title":  "Iced Rope Chain 6mm â€” Gold Vermeil Moissanite",
+                                                        "category":  "accessories",
+                                                        "amountCents":  119000,
+                                                        "currency":  "aud",
+                                                        "image":  null
+                                                    },
+    "iced-cuban-link-chain-12mm-gold-vermeil-moissanite":  {
+                                                               "variantId":  "gid://shopify/ProductVariant/48331136925914",
+                                                               "title":  "Iced Cuban Link Chain 12mm â€” Gold Vermeil Moissanite",
+                                                               "category":  "accessories",
+                                                               "amountCents":  185000,
+                                                               "currency":  "aud",
+                                                               "image":  null
+                                                           },
+    "magnetic-thinking-putty":  {
+                                    "variantId":  "gid://shopify/ProductVariant/48080871325914",
+                                    "title":  "Magnetic Thinking Putty",
+                                    "category":  "magnetic",
+                                    "amountCents":  2400,
+                                    "currency":  "aud",
+                                    "image":  null
+                                },
+    "ono-magnetic-slider":  {
+                                "variantId":  "gid://shopify/ProductVariant/48056686149850",
+                                "title":  "ONO Magnetic Slider",
+                                "category":  "edc",
+                                "amountCents":  17500,
+                                "currency":  "aud",
+                                "image":  null
+                            },
+    "sisyphus-sand-table":  {
+                                "variantId":  "gid://shopify/ProductVariant/48056667144410",
+                                "title":  "Sisyphus Sand Table",
+                                "category":  "furniture",
+                                "amountCents":  39900,
+                                "currency":  "aud",
+                                "image":  null
+                            },
+    "garnet-hill-heated-mattress-pad":  {
+                                            "variantId":  "gid://shopify/ProductVariant/47938559181018",
+                                            "title":  "Garnet Hill Heated Mattress Pad",
+                                            "category":  "bedding",
+                                            "amountCents":  29900,
+                                            "currency":  "aud",
+                                            "image":  null
+                                        },
+    "avocado-green-latex-mattress-topper":  {
+                                                "variantId":  "gid://shopify/ProductVariant/47938547417306",
+                                                "title":  "Avocado Green Latex Mattress Topper",
+                                                "category":  "avocado",
+                                                "amountCents":  69900,
+                                                "currency":  "aud",
+                                                "image":  null
+                                            },
+    "tempur-pedic-neck-contour-pillow":  {
+                                             "variantId":  "gid://shopify/ProductVariant/47938533523674",
+                                             "title":  "Tempur-Pedic Neck Contour Pillow",
+                                             "category":  "bedding",
+                                             "amountCents":  15900,
+                                             "currency":  "aud",
+                                             "image":  null
+                                         },
+    "parachute-waffle-cotton-robe-bone":  {
+                                              "variantId":  "gid://shopify/ProductVariant/47938533294298",
+                                              "title":  "Parachute Waffle Cotton Robe â€” Bone",
+                                              "category":  "bedding",
+                                              "amountCents":  12900,
+                                              "currency":  "aud",
+                                              "image":  null
+                                          },
+    "frette-hotel-classic-linen-sheet-set-stone":  {
+                                                       "variantId":  "gid://shopify/ProductVariant/47938532311258",
+                                                       "title":  "Frette Hotel Classic Linen Sheet Set â€” Stone",
+                                                       "category":  "bedding",
+                                                       "amountCents":  99000,
+                                                       "currency":  "aud",
+                                                       "image":  null
+                                                   },
+    "garmin-fenix-8-amoled-51mm-titanium":  {
+                                                "variantId":  "gid://shopify/ProductVariant/47935692046554",
+                                                "title":  "Garmin fÄ“nix 8 AMOLED â€” 51mm Titanium",
+                                                "category":  "electronics",
+                                                "amountCents":  119900,
+                                                "currency":  "aud",
+                                                "image":  null
+                                            },
+    "roborock-s8-pro-ultra-robot-vacuum-mop":  {
+                                                   "variantId":  "gid://shopify/ProductVariant/47935374622938",
+                                                   "title":  "Roborock S8 Pro Ultra Robot Vacuum + Mop",
+                                                   "category":  "electronics",
+                                                   "amountCents":  159900,
+                                                   "currency":  "aud",
+                                                   "image":  null
+                                               },
+    "apple-iphone-16-pro-max-256gb-titanium-black":  {
+                                                         "variantId":  "gid://shopify/ProductVariant/47935373836506",
+                                                         "title":  "Apple iPhone 16 Pro Max â€” 256GB Titanium Black",
+                                                         "category":  "apple",
+                                                         "amountCents":  119900,
+                                                         "currency":  "aud",
+                                                         "image":  null
+                                                     },
+    "samsung-galaxy-s25-ultra-512gb-titanium-black":  {
+                                                          "variantId":  "gid://shopify/ProductVariant/47935373476058",
+                                                          "title":  "Samsung Galaxy S25 Ultra â€” 512GB Titanium Black",
+                                                          "category":  "android",
+                                                          "amountCents":  141900,
+                                                          "currency":  "aud",
+                                                          "image":  null
+                                                      },
+    "steam-deck-oled-1tb":  {
+                                "variantId":  "gid://shopify/ProductVariant/47935370330330",
+                                "title":  "Steam Deck OLED â€” 1TB",
+                                "category":  "electronics",
+                                "amountCents":  64900,
+                                "currency":  "aud",
+                                "image":  null
+                            },
+    "bose-soundlink-max-portable-speaker-black":  {
+                                                      "variantId":  "gid://shopify/ProductVariant/47935369380058",
+                                                      "title":  "Bose SoundLink Max Portable Speaker â€” Black",
+                                                      "category":  "audio",
+                                                      "amountCents":  39900,
+                                                      "currency":  "aud",
+                                                      "image":  null
+                                                  },
+    "sony-alpha-7-iv-mirrorless-camera-body":  {
+                                                   "variantId":  "gid://shopify/ProductVariant/47935368560858",
+                                                   "title":  "Sony Alpha 7 IV Mirrorless Camera â€” Body",
+                                                   "category":  "camera",
+                                                   "amountCents":  249900,
+                                                   "currency":  "aud",
+                                                   "image":  null
+                                               },
+    "dji-mavic-4-pro-drone":  {
+                                  "variantId":  "gid://shopify/ProductVariant/47935368298714",
+                                  "title":  "DJI Mavic 4 Pro Drone",
+                                  "category":  "camera",
+                                  "amountCents":  249900,
+                                  "currency":  "aud",
+                                  "image":  null
+                              },
+    "apple-vision-pro-256gb":  {
+                                   "variantId":  "gid://shopify/ProductVariant/47935367217370",
+                                   "title":  "Apple Vision Pro â€” 256GB",
+                                   "category":  "apple",
+                                   "amountCents":  349900,
+                                   "currency":  "aud",
+                                   "image":  null
+                               },
+    "sony-playstation-5-pro-2tb":  {
+                                       "variantId":  "gid://shopify/ProductVariant/47935366463706",
+                                       "title":  "Sony PlayStation 5 Pro â€” 2TB",
+                                       "category":  "electronics",
+                                       "amountCents":  69900,
+                                       "currency":  "aud",
+                                       "image":  null
+                                   },
+    "apple-macbook-pro-14-m4-pro-24gb-512gb":  {
+                                                   "variantId":  "gid://shopify/ProductVariant/47935365152986",
+                                                   "title":  "Apple MacBook Pro 14\" M4 Pro â€” 24GB / 512GB",
+                                                   "category":  "apple",
+                                                   "amountCents":  199900,
+                                                   "currency":  "aud",
+                                                   "image":  null
+                                               },
+    "apple-ipad-pro-13-m4-256gb-wi-fi":  {
+                                             "variantId":  "gid://shopify/ProductVariant/47935364628698",
+                                             "title":  "Apple iPad Pro 13\" M4 â€” 256GB Wi-Fi",
+                                             "category":  "apple",
+                                             "amountCents":  129900,
+                                             "currency":  "aud",
+                                             "image":  null
+                                         },
+    "apple-watch-ultra-2-49mm-titanium":  {
+                                              "variantId":  "gid://shopify/ProductVariant/47935364137178",
+                                              "title":  "Apple Watch Ultra 2 â€” 49mm Titanium",
+                                              "category":  "apple",
+                                              "amountCents":  79900,
+                                              "currency":  "aud",
+                                              "image":  null
+                                          },
+    "sony-wh-1000xm5-wireless-headphones-black":  {
+                                                      "variantId":  "gid://shopify/ProductVariant/47935361876186",
+                                                      "title":  "Sony WH-1000XM5 Wireless Headphones â€” Black",
+                                                      "category":  "audio",
+                                                      "amountCents":  39900,
+                                                      "currency":  "aud",
+                                                      "image":  null
+                                                  },
+    "apple-airpods-pro-2-usb-c":  {
+                                      "variantId":  "gid://shopify/ProductVariant/47935359123674",
+                                      "title":  "Apple AirPods Pro 2 â€” USB-C",
+                                      "category":  "apple",
+                                      "amountCents":  24900,
+                                      "currency":  "aud",
+                                      "image":  null
+                                  },
+    "bc-shawl-silk-cardigan-heather-grey":  {
+                                                "variantId":  "gid://shopify/ProductVariant/47935357714650",
+                                                "title":  "BC Shawl Silk Cardigan â€” Heather Grey",
+                                                "category":  "cardigan",
+                                                "amountCents":  89000,
+                                                "currency":  "aud",
+                                                "image":  null
+                                            },
+    "tf-knit-polo-forest-green":  {
+                                      "variantId":  "gid://shopify/ProductVariant/47932193472730",
+                                      "title":  "TF Knit Polo â€” Forest Green",
+                                      "category":  "cotton",
+                                      "amountCents":  35000,
+                                      "currency":  "aud",
+                                      "image":  null
+                                  },
+    "br-poplin-dress-shirt-white":  {
+                                        "variantId":  "gid://shopify/ProductVariant/47932192162010",
+                                        "title":  "BR Poplin Dress Shirt â€” White",
+                                        "category":  "cotton poplin",
+                                        "amountCents":  39500,
+                                        "currency":  "aud",
+                                        "image":  null
+                                    },
+    "pr-saffiano-leather-messenger-bag-black":  {
+                                                    "variantId":  "gid://shopify/ProductVariant/47932190621914",
+                                                    "title":  "PR Saffiano Leather Messenger Bag â€” Black",
+                                                    "category":  "accessories",
+                                                    "amountCents":  139000,
+                                                    "currency":  "aud",
+                                                    "image":  null
+                                                },
+    "hm-constance-buckle-belt-black-gold":  {
+                                                "variantId":  "gid://shopify/ProductVariant/47932189409498",
+                                                "title":  "HM Constance Buckle Belt â€” Black / Gold",
+                                                "category":  "accessories",
+                                                "amountCents":  56000,
+                                                "currency":  "aud",
+                                                "image":  null
+                                            },
+    "sl-wyatt-chelsea-boot-black-calfskin":  {
+                                                 "variantId":  "gid://shopify/ProductVariant/47932182364378",
+                                                 "title":  "SL Wyatt Chelsea Boot â€” Black Calfskin",
+                                                 "category":  "boots",
+                                                 "amountCents":  99500,
+                                                 "currency":  "aud",
+                                                 "image":  null
+                                             },
+    "pr-re-nylon-bomber-black":  {
+                                     "variantId":  "gid://shopify/ProductVariant/47932181610714",
+                                     "title":  "PR Re-Nylon Bomber â€” Black",
+                                     "category":  "bomber",
+                                     "amountCents":  145000,
+                                     "currency":  "aud",
+                                     "image":  null
+                                 },
+    "bv-box-tee-black":  {
+                             "variantId":  "gid://shopify/ProductVariant/47932180234458",
+                             "title":  "BV Box Tee â€” Black",
+                             "category":  "cotton",
+                             "amountCents":  21000,
+                             "currency":  "aud",
+                             "image":  null
+                         },
+    "bb-triple-s-chunky-sneaker-white-grey":  {
+                                                  "variantId":  "gid://shopify/ProductVariant/47932162703578",
+                                                  "title":  "BB Triple-S Chunky Sneaker â€” White / Grey",
+                                                  "category":  "chunky sole",
+                                                  "amountCents":  65000,
+                                                  "currency":  "aud",
+                                                  "image":  null
+                                              },
+    "bc-double-breasted-wool-blazer-charcoal":  {
+                                                    "variantId":  "gid://shopify/ProductVariant/47932149465306",
+                                                    "title":  "BC Double-Breasted Wool Blazer â€” Charcoal",
+                                                    "category":  "blazer",
+                                                    "amountCents":  129000,
+                                                    "currency":  "aud",
+                                                    "image":  null
+                                                },
+    "ami-selvedge-straight-jean-raw-indigo":  {
+                                                  "variantId":  "gid://shopify/ProductVariant/47932145959130",
+                                                  "title":  "AMI Selvedge Straight Jean â€” Raw Indigo",
+                                                  "category":  "denim",
+                                                  "amountCents":  32000,
+                                                  "currency":  "aud",
+                                                  "image":  null
+                                              },
+    "sl-wool-tuxedo-trouser-black":  {
+                                         "variantId":  "gid://shopify/ProductVariant/47932143665370",
+                                         "title":  "SL Wool Tuxedo Trouser â€” Black",
+                                         "category":  "fashion",
+                                         "amountCents":  56000,
+                                         "currency":  "aud",
+                                         "image":  null
+                                     },
+    "as-mock-leather-moto-jacket-black-lambskin":  {
+                                                       "variantId":  "gid://shopify/ProductVariant/47932137996506",
+                                                       "title":  "AS Mock Leather Moto Jacket â€” Black Lambskin",
+                                                       "category":  "fashion",
+                                                       "amountCents":  89000,
+                                                       "currency":  "aud",
+                                                       "image":  null
+                                                   },
+    "dt-mach-aviator-black-titanium-gold":  {
+                                                "variantId":  "gid://shopify/ProductVariant/47932108374234",
+                                                "title":  "DT Mach Aviator â€” Black Titanium / Gold",
+                                                "category":  "accessories",
+                                                "amountCents":  42000,
+                                                "currency":  "aud",
+                                                "image":  null
+                                            },
+    "rb-wayfarer-acetate-black-g-15-polarized":  {
+                                                     "variantId":  "gid://shopify/ProductVariant/47931900100826",
+                                                     "title":  "RB Wayfarer Acetate â€” Black / G-15 Polarized",
+                                                     "category":  "accessories",
+                                                     "amountCents":  24500,
+                                                     "currency":  "aud",
+                                                     "image":  null
+                                                 }
+}
