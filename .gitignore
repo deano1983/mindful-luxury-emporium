@@ -48,3 +48,4 @@ ios/DerivedData/
 # NOTE: memory-bank/ IS committed on purpose — it is the resumable session state.
 # local audit dumps (catalog image review)
 .audit/
+`n# deploy artifacts (never commit)`n.deploy.zip`n.zipcheck/`n.netlify/`n*.log
