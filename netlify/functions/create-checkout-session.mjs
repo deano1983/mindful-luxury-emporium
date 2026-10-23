@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Yu+Mi standalone checkout (Netlify Function, direct Stripe REST).
  * No Lovable gateway, no Shopify. Prices validated server-side from
  * ./data/mle-prices.json; client-claimed prices are never trusted.
@@ -12,8 +12,8 @@ import fs from "node:fs";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
 
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const PRICES = JSON.parse(fs.readFileSync(path.join(__dirname, "data", "mle-prices.json"), "utf8"));
+const FUNCTION_DIR = path.dirname(fileURLToPath(import.meta.url));
+const PRICES = JSON.parse(fs.readFileSync(path.join(FUNCTION_DIR, "data", "mle-prices.json"), "utf8"));
 
 const BASE_URL = process.env.PUBLIC_BASE_URL ?? "https://yumi-luxury.netlify.app";
 
@@ -27,7 +27,7 @@ export default async (req) => {
   const key = process.env.STRIPE_SECRET_KEY;
   if (!key) {
     return json(503, {
-      error: "Checkout is not configured yet: STRIPE_SECRET_KEY is not set. Add it in Netlify → Site settings → Environment variables.",
+      error: "Checkout is not configured yet: STRIPE_SECRET_KEY is not set. Add it in Netlify â†’ Site settings â†’ Environment variables.",
     });
   }
 
