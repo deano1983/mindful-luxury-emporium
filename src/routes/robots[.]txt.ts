@@ -9,7 +9,7 @@ export const Route = createFileRoute("/robots.txt")({
           "User-agent: *",
           "Allow: /",
           "",
-          "Sitemap: https://mindful-luxury-emporium.lovable.app/sitemap.xml",
+          "Sitemap: https://yumi-adhd-sanctuary.netlify.app/sitemap.xml",
           "",
         ].join("\n");
         return new Response(body, {

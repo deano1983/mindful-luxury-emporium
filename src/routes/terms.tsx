@@ -1,18 +1,18 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+﻿import { createFileRoute, Link } from "@tanstack/react-router";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 
 export const Route = createFileRoute("/terms")({
   head: () => ({
     meta: [
-      { title: "Terms & Conditions — Yu+Mi · A.D.H.D" },
-      { name: "description", content: "The terms that govern your use of the Yu+Mi · A.D.H.D store, including orders, shipping, returns, and warranties." },
-      { property: "og:title", content: "Terms & Conditions — Yu+Mi · A.D.H.D" },
+      { title: "Terms & Conditions â€” Yu+Mi Â· A.D.H.D" },
+      { name: "description", content: "The terms that govern your use of the Yu+Mi Â· A.D.H.D store, including orders, shipping, returns, and warranties." },
+      { property: "og:title", content: "Terms & Conditions â€” Yu+Mi Â· A.D.H.D" },
       { property: "og:description", content: "Store terms covering orders, shipping, returns, warranties, and acceptable use." },
-      { property: "og:url", content: "https://mindful-luxury-emporium.lovable.app/terms" },
+      { property: "og:url", content: "https://yumi-adhd-sanctuary.netlify.app/terms" },
       { property: "og:type", content: "website" },
     ],
-    links: [{ rel: "canonical", href: "https://mindful-luxury-emporium.lovable.app/terms" }],
+    links: [{ rel: "canonical", href: "https://yumi-adhd-sanctuary.netlify.app/terms" }],
   }),
   component: TermsPage,
 });
@@ -29,12 +29,12 @@ function TermsPage() {
 
         <div className="space-y-8 text-[15px] leading-relaxed text-muted-foreground">
           <p className="italic border-l-2 border-primary/60 pl-4">
-            These Terms are maintained by Yu+Mi · A.D.H.D and govern your use of our website and purchases from our store. Please read them carefully. Continuing to browse or place an order means you agree to them.
+            These Terms are maintained by Yu+Mi Â· A.D.H.D and govern your use of our website and purchases from our store. Please read them carefully. Continuing to browse or place an order means you agree to them.
           </p>
 
           <div>
             <h2 className="font-display text-2xl text-foreground mb-3">1. About us</h2>
-            <p>Yu+Mi · A.D.H.D ("we", "us", "our") operates an online store curating luxury menswear, accessories, personal electronics, bedding, and tactile objects. Contact: <a href="mailto:concierge@yumiadhd.co" className="text-primary hover:underline">concierge@yumiadhd.co</a>.</p>
+            <p>Yu+Mi Â· A.D.H.D ("we", "us", "our") operates an online store curating luxury menswear, accessories, personal electronics, bedding, and tactile objects. Contact: <a href="mailto:concierge@yumiadhd.co" className="text-primary hover:underline">concierge@yumiadhd.co</a>.</p>
           </div>
 
           <div>
@@ -66,7 +66,7 @@ function TermsPage() {
             <ul className="list-disc pl-5 space-y-2">
               <li>Unworn, unwashed items in original packaging may be returned within 14 days of delivery.</li>
               <li>Bedding, intimate objects, and personal electronics that have been opened are non-returnable for hygiene and safety reasons unless faulty.</li>
-              <li>Refunds are issued to the original payment method within 5–10 business days of receipt of the returned item.</li>
+              <li>Refunds are issued to the original payment method within 5â€“10 business days of receipt of the returned item.</li>
               <li>Sale and final-clearance items are non-refundable unless required by law.</li>
             </ul>
           </div>
@@ -78,12 +78,12 @@ function TermsPage() {
 
           <div>
             <h2 className="font-display text-2xl text-foreground mb-3">8. Intellectual property</h2>
-            <p>All content on this site — including text, photography, logos, and design — is owned by or licensed to Yu+Mi · A.D.H.D and protected by intellectual-property laws. You may not copy, reproduce, or use it for commercial purposes without our written permission.</p>
+            <p>All content on this site â€” including text, photography, logos, and design â€” is owned by or licensed to Yu+Mi Â· A.D.H.D and protected by intellectual-property laws. You may not copy, reproduce, or use it for commercial purposes without our written permission.</p>
           </div>
 
           <div>
             <h2 className="font-display text-2xl text-foreground mb-3">9. Acceptable use</h2>
-            <p>You agree not to misuse the site — including scraping, reverse-engineering, uploading malicious code, or interfering with other shoppers. We may suspend or terminate access for violations.</p>
+            <p>You agree not to misuse the site â€” including scraping, reverse-engineering, uploading malicious code, or interfering with other shoppers. We may suspend or terminate access for violations.</p>
           </div>
 
           <div>
@@ -98,7 +98,7 @@ function TermsPage() {
 
           <div>
             <h2 className="font-display text-2xl text-foreground mb-3">12. Governing law</h2>
-            <p>These Terms are governed by the laws of the jurisdiction in which Yu+Mi · A.D.H.D is established, without regard to conflict-of-laws principles. Disputes will be resolved in the competent courts of that jurisdiction, unless applicable consumer law grants you additional forum rights.</p>
+            <p>These Terms are governed by the laws of the jurisdiction in which Yu+Mi Â· A.D.H.D is established, without regard to conflict-of-laws principles. Disputes will be resolved in the competent courts of that jurisdiction, unless applicable consumer law grants you additional forum rights.</p>
           </div>
 
           <div>
@@ -108,7 +108,7 @@ function TermsPage() {
 
           <div>
             <h2 className="font-display text-2xl text-foreground mb-3">14. Contact</h2>
-            <p>Yu+Mi · A.D.H.D — <a href="mailto:concierge@yumiadhd.co" className="text-primary hover:underline">concierge@yumiadhd.co</a></p>
+            <p>Yu+Mi Â· A.D.H.D â€” <a href="mailto:concierge@yumiadhd.co" className="text-primary hover:underline">concierge@yumiadhd.co</a></p>
           </div>
 
           <p className="pt-6 text-xs">See also our <Link to="/privacy" className="text-primary hover:underline">Privacy Policy</Link>.</p>

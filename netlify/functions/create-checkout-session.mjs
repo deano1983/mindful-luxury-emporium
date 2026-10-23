@@ -1,7 +1,7 @@
-﻿/**
+/**
  * Yu+Mi standalone checkout (Netlify Function, direct Stripe REST).
  * No Lovable gateway, no Shopify. Prices validated server-side from
- * ./data/yumi-prices.json; client-claimed prices are never trusted.
+ * ./data/mle-prices.json; client-claimed prices are never trusted.
  *
  * Env: STRIPE_SECRET_KEY, optional PUBLIC_BASE_URL.
  * POST /api/create-checkout-session
@@ -13,7 +13,7 @@ import { fileURLToPath } from "node:url";
 import path from "node:path";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const PRICES = JSON.parse(fs.readFileSync(path.join(__dirname, "data", "yumi-prices.json"), "utf8"));
+const PRICES = JSON.parse(fs.readFileSync(path.join(__dirname, "data", "mle-prices.json"), "utf8"));
 
 const BASE_URL = process.env.PUBLIC_BASE_URL ?? "https://yumi-luxury.netlify.app";
 

@@ -1,4 +1,4 @@
-import { createFileRoute, notFound } from "@tanstack/react-router";
+﻿import { createFileRoute, notFound } from "@tanstack/react-router";
 import { useQuery } from "@tanstack/react-query";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
@@ -13,26 +13,26 @@ export const Route = createFileRoute("/category/$slug")({
   },
   head: ({ loaderData }) => ({
     meta: loaderData ? [
-      { title: `${loaderData.cat.title} — Yu+Mi · A.D.H.D` },
+      { title: `${loaderData.cat.title} â€” Yu+Mi Â· A.D.H.D` },
       { name: "description", content: loaderData.cat.blurb },
-      { property: "og:title", content: `${loaderData.cat.title} — Yu+Mi · A.D.H.D` },
+      { property: "og:title", content: `${loaderData.cat.title} â€” Yu+Mi Â· A.D.H.D` },
       { property: "og:description", content: loaderData.cat.blurb },
-      { property: "og:url", content: `https://mindful-luxury-emporium.lovable.app/category/${loaderData.cat.slug}` },
+      { property: "og:url", content: `https://yumi-adhd-sanctuary.netlify.app/category/${loaderData.cat.slug}` },
     ] : [],
-    links: loaderData ? [{ rel: "canonical", href: `https://mindful-luxury-emporium.lovable.app/category/${loaderData.cat.slug}` }] : [],
+    links: loaderData ? [{ rel: "canonical", href: `https://yumi-adhd-sanctuary.netlify.app/category/${loaderData.cat.slug}` }] : [],
     scripts: loaderData ? [
       {
         type: "application/ld+json",
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "CollectionPage",
-          name: `${loaderData.cat.title} — Yu+Mi · A.D.H.D`,
+          name: `${loaderData.cat.title} â€” Yu+Mi Â· A.D.H.D`,
           description: loaderData.cat.blurb,
-          url: `https://mindful-luxury-emporium.lovable.app/category/${loaderData.cat.slug}`,
+          url: `https://yumi-adhd-sanctuary.netlify.app/category/${loaderData.cat.slug}`,
           isPartOf: {
             "@type": "WebSite",
-            name: "Yu+Mi · A.D.H.D",
-            url: "https://mindful-luxury-emporium.lovable.app",
+            name: "Yu+Mi Â· A.D.H.D",
+            url: "https://yumi-adhd-sanctuary.netlify.app",
           },
         }),
       },
@@ -42,8 +42,8 @@ export const Route = createFileRoute("/category/$slug")({
           "@context": "https://schema.org",
           "@type": "BreadcrumbList",
           itemListElement: [
-            { "@type": "ListItem", position: 1, name: "Home", item: "https://mindful-luxury-emporium.lovable.app/" },
-            { "@type": "ListItem", position: 2, name: loaderData.cat.title, item: `https://mindful-luxury-emporium.lovable.app/category/${loaderData.cat.slug}` },
+            { "@type": "ListItem", position: 1, name: "Home", item: "https://yumi-adhd-sanctuary.netlify.app/" },
+            { "@type": "ListItem", position: 2, name: loaderData.cat.title, item: `https://yumi-adhd-sanctuary.netlify.app/category/${loaderData.cat.slug}` },
           ],
         }),
       },
@@ -74,7 +74,7 @@ function CategoryPage() {
         <p className="mt-4 text-muted-foreground max-w-xl">{cat.blurb}</p>
       </section>
       <section className="max-w-7xl mx-auto px-6 py-16">
-        {isLoading ? <p className="text-muted-foreground">Loading…</p> : <ProductGrid products={data ?? []} />}
+        {isLoading ? <p className="text-muted-foreground">Loadingâ€¦</p> : <ProductGrid products={data ?? []} />}
       </section>
       <Footer />
     </div>

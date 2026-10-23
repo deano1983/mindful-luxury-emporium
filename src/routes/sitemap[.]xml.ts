@@ -1,24 +1,16 @@
 import { createFileRoute } from "@tanstack/react-router";
 import type {} from "@tanstack/react-start";
-import { CATEGORIES, PRODUCTS_QUERY, SHOPIFY_STOREFRONT_URL, SHOPIFY_STOREFRONT_TOKEN } from "@/lib/shopify";
+import { CATEGORIES } from "@/lib/shopify";
+import rawCatalog from "@/data/catalog.json";
 
-const BASE_URL = "https://mindful-luxury-emporium.lovable.app";
+const BASE_URL = process.env.PUBLIC_BASE_URL ?? "https://yumi-luxury.netlify.app";
 
+// STANDALONE: handles come from the bundled local catalog (no Shopify API).
 async function fetchHandles(): Promise<string[]> {
-  try {
-    const res = await fetch(SHOPIFY_STOREFRONT_URL, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "X-Shopify-Storefront-Access-Token": SHOPIFY_STOREFRONT_TOKEN,
-      },
-      body: JSON.stringify({ query: PRODUCTS_QUERY, variables: { first: 250, query: "" } }),
-    });
-    if (!res.ok) return [];
-    const json = await res.json() as { data?: { products?: { edges?: Array<{ node: { handle: string } }> } } };
-    return (json.data?.products?.edges ?? []).map(e => e.node.handle);
-  } catch { return []; }
+  const catalog = rawCatalog as Array<{ node: { handle: string } }>;
+  return catalog.map((e) => e.node.handle);
 }
+
 
 export const Route = createFileRoute("/sitemap.xml")({
   server: {

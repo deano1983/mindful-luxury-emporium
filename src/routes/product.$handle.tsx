@@ -1,4 +1,4 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+﻿import { createFileRoute, Link } from "@tanstack/react-router";
 import { useQuery } from "@tanstack/react-query";
 import { useState } from "react";
 import { Header } from "@/components/Header";
@@ -19,12 +19,12 @@ export const Route = createFileRoute("/product/$handle")({
     const p = loaderData?.product;
     const readable = params.handle.replace(/-/g, " ");
     const title = p?.title ?? readable;
-    const rawDesc = p?.description || `${readable} — sensory-considered luxury from Yu+Mi Sanctuary. Premium fabrics and quiet construction, with full sizing and detailed materials.`;
-    const desc = rawDesc.length > 160 ? rawDesc.slice(0, 157) + "…" : rawDesc;
+    const rawDesc = p?.description || `${readable} â€” sensory-considered luxury from Yu+Mi Sanctuary. Premium fabrics and quiet construction, with full sizing and detailed materials.`;
+    const desc = rawDesc.length > 160 ? rawDesc.slice(0, 157) + "â€¦" : rawDesc;
     const image = p?.images?.edges?.[0]?.node?.url;
     const price = p?.variants?.edges?.[0]?.node?.price;
     const available = p?.variants?.edges?.some((e: { node: { availableForSale: boolean } }) => e.node.availableForSale);
-    const url = `https://mindful-luxury-emporium.lovable.app/product/${params.handle}`;
+    const url = `https://yumi-adhd-sanctuary.netlify.app/product/${params.handle}`;
     const priceValidUntil = (() => {
       const d = new Date();
       d.setFullYear(d.getFullYear() + 1);
@@ -34,9 +34,9 @@ export const Route = createFileRoute("/product/$handle")({
     const sku = p?.variants?.edges?.[0]?.node?.id?.split("/").pop();
     return {
       meta: [
-        { title: `${title} — Yu+Mi · A.D.H.D` },
+        { title: `${title} â€” Yu+Mi Â· A.D.H.D` },
         { name: "description", content: desc },
-        { property: "og:title", content: `${title} — Yu+Mi · A.D.H.D` },
+        { property: "og:title", content: `${title} â€” Yu+Mi Â· A.D.H.D` },
         { property: "og:description", content: desc },
         { property: "og:type", content: "product" },
         { property: "og:url", content: url },
@@ -52,7 +52,7 @@ export const Route = createFileRoute("/product/$handle")({
           description: rawDesc,
           ...(image ? { image: [image] } : {}),
           url,
-          brand: { "@type": "Brand", name: "Yu+Mi · A.D.H.D" },
+          brand: { "@type": "Brand", name: "Yu+Mi Â· A.D.H.D" },
           ...(sku ? { sku } : {}),
           ...(category ? { category } : {}),
           ...(price ? {
@@ -73,7 +73,7 @@ export const Route = createFileRoute("/product/$handle")({
           "@context": "https://schema.org",
           "@type": "BreadcrumbList",
           itemListElement: [
-            { "@type": "ListItem", position: 1, name: "Home", item: "https://mindful-luxury-emporium.lovable.app/" },
+            { "@type": "ListItem", position: 1, name: "Home", item: "https://yumi-adhd-sanctuary.netlify.app/" },
             { "@type": "ListItem", position: 2, name: p.title, item: url },
           ],
         }),
@@ -100,14 +100,14 @@ function ProductPage() {
   const [imgIdx, setImgIdx] = useState(0);
 
   if (isLoading) {
-    return <div className="min-h-screen bg-background"><Header /><div className="max-w-7xl mx-auto px-6 py-24 text-muted-foreground">Loading…</div></div>;
+    return <div className="min-h-screen bg-background"><Header /><div className="max-w-7xl mx-auto px-6 py-24 text-muted-foreground">Loadingâ€¦</div></div>;
   }
   if (!data) {
     return (
       <div className="min-h-screen bg-background"><Header />
         <div className="max-w-7xl mx-auto px-6 py-24 text-center">
           <p className="font-display text-2xl">Product not found.</p>
-          <Link to="/" className="text-primary text-sm mt-3 inline-block">← Return to shop</Link>
+          <Link to="/" className="text-primary text-sm mt-3 inline-block">â† Return to shop</Link>
         </div>
       </div>
     );

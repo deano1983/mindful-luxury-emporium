@@ -1,4 +1,4 @@
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+﻿import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Outlet, Link, createRootRouteWithContext, useRouter, HeadContent, Scripts } from "@tanstack/react-router";
 import { Toaster } from "@/components/ui/sonner";
 import { useCartSync } from "@/hooks/useCartSync";
@@ -35,9 +35,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Yu+Mi · A.D.H.D — Luxury for the sensitive mind" },
+      { title: "Yu+Mi Â· A.D.H.D â€” Luxury for the sensitive mind" },
       { name: "description", content: "Curated luxury fashion, electronics, and sensory objects for neurodivergent men of taste. Designed to soften the world." },
-      { property: "og:title", content: "Yu+Mi · A.D.H.D" },
+      { property: "og:title", content: "Yu+Mi Â· A.D.H.D" },
       { property: "og:description", content: "Luxury menswear and sensory-considered objects." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -55,8 +55,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Organization",
-          name: "Yu+Mi · A.D.H.D",
-          url: "https://mindful-luxury-emporium.lovable.app",
+          name: "Yu+Mi Â· A.D.H.D",
+          url: "https://yumi-adhd-sanctuary.netlify.app",
           description: "Curated luxury fashion, electronics, and sensory objects for neurodivergent men of taste.",
         }),
       },
@@ -65,8 +65,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "WebSite",
-          name: "Yu+Mi · A.D.H.D",
-          url: "https://mindful-luxury-emporium.lovable.app",
+          name: "Yu+Mi Â· A.D.H.D",
+          url: "https://yumi-adhd-sanctuary.netlify.app",
         }),
       },
     ],

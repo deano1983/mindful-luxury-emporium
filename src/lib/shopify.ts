@@ -1,9 +1,14 @@
-import { toast } from "sonner";
+import rawCatalog from "@/data/catalog.json";
 
-export const SHOPIFY_API_VERSION = "2025-07";
-export const SHOPIFY_STORE_PERMANENT_DOMAIN = "yu-mi-a-d-h-d-sanctuary-zd6hf.myshopify.com";
-export const SHOPIFY_STOREFRONT_URL = `https://${SHOPIFY_STORE_PERMANENT_DOMAIN}/api/${SHOPIFY_API_VERSION}/graphql.json`;
-export const SHOPIFY_STOREFRONT_TOKEN = "b57da2b44fe9d09a4559c51b17e518b5";
+/**
+ * STANDALONE CATALOG (Yu+Mi) — no Shopify, no Lovable.
+ * The storefront no longer calls the Shopify Storefront API (which began
+ * returning HTTP 402). All product data ships with the app from
+ * src/data/catalog.json (built from store/yumi-shopify-products-raw.json).
+ *
+ * storefrontApiRequest() is kept as a compatibility shim with the same
+ * response shapes the routes already parse, so no route logic changes.
+ */
 
 export interface ShopifyProduct {
   node: {
@@ -13,6 +18,7 @@ export interface ShopifyProduct {
     handle: string;
     productType: string;
     tags: string[];
+    vendor?: string;
     priceRange: { minVariantPrice: { amount: string; currencyCode: string } };
     images: { edges: Array<{ node: { url: string; altText: string | null } }> };
     variants: {
@@ -30,61 +36,21 @@ export interface ShopifyProduct {
   };
 }
 
-export const PRODUCTS_QUERY = `
-  query GetProducts($first: Int!, $query: String) {
-    products(first: $first, query: $query) {
-      edges {
-        node {
-          id title description handle productType tags
-          priceRange { minVariantPrice { amount currencyCode } }
-          images(first: 5) { edges { node { url altText } } }
-          variants(first: 10) {
-            edges { node { id title price { amount currencyCode } availableForSale selectedOptions { name value } } }
-          }
-          options { name values }
-        }
-      }
-    }
-  }
-`;
+const CATALOG = rawCatalog as unknown as ShopifyProduct[];
 
-export const PRODUCT_BY_HANDLE_QUERY = `
-  query GetProduct($handle: String!) {
-    product(handle: $handle) {
-      id title description handle productType tags
-      priceRange { minVariantPrice { amount currencyCode } }
-      images(first: 8) { edges { node { url altText } } }
-      variants(first: 25) {
-        edges { node { id title price { amount currencyCode } availableForSale selectedOptions { name value } } }
-      }
-      options { name values }
-    }
-  }
-`;
+export const PRODUCTS_QUERY = "local:products";
+export const PRODUCT_BY_HANDLE_QUERY = "local:product-by-handle";
 
 export async function storefrontApiRequest(query: string, variables: Record<string, unknown> = {}) {
-  const response = await fetch(SHOPIFY_STOREFRONT_URL, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      "X-Shopify-Storefront-Access-Token": SHOPIFY_STOREFRONT_TOKEN,
-    },
-    body: JSON.stringify({ query, variables }),
-  });
-
-  if (response.status === 402) {
-    toast.error("Shopify: Payment required", {
-      description: "Shopify API access requires an active billing plan. Visit https://admin.shopify.com to upgrade.",
-    });
-    return;
+  if (query === PRODUCT_BY_HANDLE_QUERY) {
+    const product = CATALOG.find((p) => p.node.handle === variables.handle)?.node ?? null;
+    return { data: { product } };
   }
-
-  if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-  const data = await response.json();
-  if (data.errors) throw new Error(`Shopify: ${data.errors.map((e: { message: string }) => e.message).join(", ")}`);
-  return data;
+  // products(first, query) — query uses Shopify tag syntax `tag:<tag>`; fall back to all.
+  const tag = typeof variables.query === "string" ? variables.query.match(/^tag:(.+)$/)?.[1] : null;
+  const edges = tag ? CATALOG.filter((p) => p.node.tags.includes(tag)) : CATALOG;
+  return { data: { products: { edges } } };
 }
-
 export const CATEGORIES = [
   { slug: "fashion", title: "Fashion", tag: "fashion", blurb: "Tactile-considered luxury menswear designed for comfort, calm and sensory regulation — soft hands, flat seams, quiet drape." },
   { slug: "accessories", title: "Fashion Accessories", tag: "accessories", blurb: "Quiet statements heavy on craft: iced moissanite jewellery and designer-grade eyewear that finish the look without the noise." },
@@ -92,3 +58,4 @@ export const CATEGORIES = [
   { slug: "bedding", title: "Bedding & Sanctuary", tag: "bedding", blurb: "Weighted, soft and deeply regulating bedding curated to lower nervous-system load and turn the bedroom into a true sanctuary." },
   { slug: "objects", title: "Objects & Play", tag: "objects", blurb: "Fidget, focus and finely-made play objects — discreet, professional-grade tools for sensory regulation and everyday creative flow." },
 ] as const;
+

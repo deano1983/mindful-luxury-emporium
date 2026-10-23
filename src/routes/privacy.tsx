@@ -1,18 +1,18 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+﻿import { createFileRoute, Link } from "@tanstack/react-router";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 
 export const Route = createFileRoute("/privacy")({
   head: () => ({
     meta: [
-      { title: "Privacy Policy — Yu+Mi · A.D.H.D" },
-      { name: "description", content: "How Yu+Mi · A.D.H.D collects, uses, and safeguards your personal information when you shop our curated luxury collection." },
-      { property: "og:title", content: "Privacy Policy — Yu+Mi · A.D.H.D" },
-      { property: "og:description", content: "How Yu+Mi · A.D.H.D collects, uses, and safeguards your personal information." },
-      { property: "og:url", content: "https://mindful-luxury-emporium.lovable.app/privacy" },
+      { title: "Privacy Policy â€” Yu+Mi Â· A.D.H.D" },
+      { name: "description", content: "How Yu+Mi Â· A.D.H.D collects, uses, and safeguards your personal information when you shop our curated luxury collection." },
+      { property: "og:title", content: "Privacy Policy â€” Yu+Mi Â· A.D.H.D" },
+      { property: "og:description", content: "How Yu+Mi Â· A.D.H.D collects, uses, and safeguards your personal information." },
+      { property: "og:url", content: "https://yumi-adhd-sanctuary.netlify.app/privacy" },
       { property: "og:type", content: "website" },
     ],
-    links: [{ rel: "canonical", href: "https://mindful-luxury-emporium.lovable.app/privacy" }],
+    links: [{ rel: "canonical", href: "https://yumi-adhd-sanctuary.netlify.app/privacy" }],
   }),
   component: PrivacyPage,
 });
@@ -29,21 +29,21 @@ function PrivacyPage() {
 
         <div className="prose-invert space-y-8 text-[15px] leading-relaxed text-muted-foreground">
           <p className="italic border-l-2 border-primary/60 pl-4">
-            This page is maintained by Yu+Mi · A.D.H.D ("we", "us", "our") to explain how we handle your personal information. It is provided for transparency and is not a substitute for legal advice. Review with counsel before relying on it commercially.
+            This page is maintained by Yu+Mi Â· A.D.H.D ("we", "us", "our") to explain how we handle your personal information. It is provided for transparency and is not a substitute for legal advice. Review with counsel before relying on it commercially.
           </p>
 
           <div>
             <h2 className="font-display text-2xl text-foreground mb-3">1. Who we are</h2>
-            <p>Yu+Mi · A.D.H.D is an online retailer of curated menswear, accessories, personal electronics, bedding, and tactile objects designed for sensory-sensitive shoppers. Questions about this policy can be sent to <a href="mailto:concierge@yumiadhd.co" className="text-primary hover:underline">concierge@yumiadhd.co</a>.</p>
+            <p>Yu+Mi Â· A.D.H.D is an online retailer of curated menswear, accessories, personal electronics, bedding, and tactile objects designed for sensory-sensitive shoppers. Questions about this policy can be sent to <a href="mailto:concierge@yumiadhd.co" className="text-primary hover:underline">concierge@yumiadhd.co</a>.</p>
           </div>
 
           <div>
             <h2 className="font-display text-2xl text-foreground mb-3">2. Information we collect</h2>
             <ul className="list-disc pl-5 space-y-2">
-              <li><span className="text-foreground">Order &amp; account details</span> — name, shipping/billing address, email, phone number, and order history.</li>
-              <li><span className="text-foreground">Payment information</span> — processed by our payment providers; we do not store full card numbers on our servers.</li>
-              <li><span className="text-foreground">Device &amp; usage data</span> — IP address, browser type, pages viewed, referral source, and cart activity, collected via cookies and similar technologies.</li>
-              <li><span className="text-foreground">Communications</span> — messages you send to customer support and newsletter preferences.</li>
+              <li><span className="text-foreground">Order &amp; account details</span> â€” name, shipping/billing address, email, phone number, and order history.</li>
+              <li><span className="text-foreground">Payment information</span> â€” processed by our payment providers; we do not store full card numbers on our servers.</li>
+              <li><span className="text-foreground">Device &amp; usage data</span> â€” IP address, browser type, pages viewed, referral source, and cart activity, collected via cookies and similar technologies.</li>
+              <li><span className="text-foreground">Communications</span> â€” messages you send to customer support and newsletter preferences.</li>
             </ul>
           </div>
 
@@ -52,7 +52,7 @@ function PrivacyPage() {
             <ul className="list-disc pl-5 space-y-2">
               <li>Process orders, payments, shipping, returns, and warranty requests.</li>
               <li>Provide customer support and respond to your inquiries.</li>
-              <li>Send transactional emails and — with your consent — marketing communications you can unsubscribe from at any time.</li>
+              <li>Send transactional emails and â€” with your consent â€” marketing communications you can unsubscribe from at any time.</li>
               <li>Detect fraud, protect our platform, and comply with legal obligations.</li>
               <li>Improve our site, product mix, and shopping experience.</li>
             </ul>
@@ -103,7 +103,7 @@ function PrivacyPage() {
 
           <div>
             <h2 className="font-display text-2xl text-foreground mb-3">11. Contact</h2>
-            <p>Yu+Mi · A.D.H.D — <a href="mailto:concierge@yumiadhd.co" className="text-primary hover:underline">concierge@yumiadhd.co</a></p>
+            <p>Yu+Mi Â· A.D.H.D â€” <a href="mailto:concierge@yumiadhd.co" className="text-primary hover:underline">concierge@yumiadhd.co</a></p>
           </div>
 
           <p className="pt-6 text-xs">See also our <Link to="/terms" className="text-primary hover:underline">Terms &amp; Conditions</Link>.</p>
