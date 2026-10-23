@@ -1,8 +1,17 @@
 # Progress — Yu+Mi · A.D.H.D
 
+## 🚀 MVP LIVE (2026-10-23)
+- [x] Stripe checkout configured (STRIPE_SECRET_KEY in Netlify env)
+- [x] Standalone deploy to Netlify (yumi-adhd-sanctuary.netlify.app) — CLI, not API zip
+- [x] `/api/create-checkout-session` verified — returns real Stripe checkout URLs
+- [x] NDIS metadata flow tested (participant details → Stripe session metadata)
+- [x] All 100 products priced (mle-prices.json, 0 missing)
+- [x] Supplier mapping complete (yumi-dsers-mapping-v2.csv, 193 rows, all with AliExpress URLs)
+- [x] Site live: https://yumi-adhd-sanctuary.netlify.app (200, SSR renders)
+
 ## From Lovable (pre-existing)
 - [x] Full TanStack Start storefront: index/category/product/cart drawer/privacy/terms routes
-- [x] Shopify Storefront wired (yu-mi-a-d-h-d-sanctuary-zd6hf.myshopify.com)
+- [x] Shopify Storefront wired (yu-mi-a-d-h-d-sanctuary-zd6hf.myshopify.com) — **REMOVED Aug 29**
 - [x] 100-product catalog art (src/assets), noir+gold theme, CartDrawer/zustand store
 
 ## Native wrap (Aug 15, this session — NDV playbook)
@@ -26,7 +35,7 @@
 - [ ] On-device test (adb + device/emulator)
 - [ ] Privacy placeholders check (privacy.tsx already exists — verify entity/email/date)
 - [ ] Store listings (copy NDV store/ docs as template: play-listing.md, appstore-listing.md)
-- [ ] Web deploy (Netlify like NDV: npm run build:app → dist/client static)
+- [ ] Web deploy (Netlify like NDV: npm run build:app → dist/client static) — **DONE Oct 23**
 - [ ] Store accounts: Google Play ($25), Apple Developer ($99)
 - [ ] Finalize appId before first upload (immutable after)
 - [ ] Replace placeholder icons/splash with final artwork

@@ -1,5 +1,18 @@
 # Active Context — READ THIS FIRST when resuming
 
+## 🚀 2026-10-23: MVP LIVE — Stripe checkout + standalone deploy
+- **STRIPE_SECRET_KEY** set in Netlify env (sk_live_...) — checkout WORKS.
+  PUBLIC_BASE_URL=https://yumi-adhd-sanctuary.netlify.app also set.
+- **DEPLOYED**: `netlify deploy --prod --build --skip-functions-cache --dir=dist/client`
+  (CLI, not API zip — zip deploys ignore functions). Site live at
+  https://yumi-adhd-sanctuary.netlify.app (200, SSR content renders).
+- **FIXED**: `netlify.toml` BOM → clean UTF-8, publish="dist/client", command="".
+  Function: `__dirname` → `FUNCTION_DIR` (esbuild ESM collision).
+- **VERIFIED**: `/api/create-checkout-session` returns real Stripe checkout URLs
+  (cs_live_...). NDIS metadata flow tested (participantName/ndisNumber/email →
+  Stripe session metadata). Shipping: AU/NZ/US/GB/CA, express 7-14d $15 AUD.
+- **Commits**: fdd3615 (standalone finish) → 565b03f (MVP LIVE).
+
 ## 📦 2026-08-29 (later): DSERS CSV + ACCOUNT SETUP
 - store/yumi-adhd-dsers-product-mapping.csv — fresh 29/08 pull, 93 rows, supplier
   columns blank (same as before: no custom.supplier_url metafields recorded at import).

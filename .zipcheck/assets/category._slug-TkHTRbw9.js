@@ -1,1 +1,0 @@
-import{j as e}from"./index-btqmpMzU.js";const o=()=>e.jsx("div",{className:"min-h-screen flex items-center justify-center bg-background",children:e.jsx("p",{className:"text-muted-foreground",children:"Category not found."})});export{o as notFoundComponent};
